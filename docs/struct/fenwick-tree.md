@@ -13,7 +13,7 @@
 
 ```cpp
 void build() {
-    _fora(i,1,n) {
+    for (int i = 1; i <=n; i++) {
         cc[i] += aa[i];
         int j = i + (i&(-i));
         if(j <= n)
@@ -27,7 +27,7 @@ void build() {
 ```cpp
 int ask(int *cc, int x) {
     int sum = 0;
-    while(x >= 1) {
+    while (x >= 1) {
         sum += cc[x];
         x -= x&(-x);
     }
@@ -39,7 +39,7 @@ int ask(int *cc, int x) {
 
 ```cpp
 void add(int *cc, int x, int k) {
-    while(x <= n) {
+    while (x <= n) {
         cc[x] += k;
         x += x&(-x);
     }

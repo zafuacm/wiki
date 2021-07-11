@@ -87,13 +87,13 @@ int qpow(int a, int n) {
 
 ```cpp
 ll qpow(ll a, ll b, ll p) {
-    ll rst = p != 1;
+    ll ret = p != 1;
     for(; b; b >>= 1) {
         if(b & 1)
-            rst = a * rst % p;
+            ret = a * ret % p;
         a = a * a % p;
     }
-    return rst;
+    return ret;
 }
 ```
 
