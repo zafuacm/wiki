@@ -8,6 +8,6 @@
 
 如果您对参与编写感兴趣，只需点击标题右边的编辑按钮 :fontawesome-solid-pen: ，即可编辑。
 
-更详细的编写流程请阅读 [如何参与](关于/如何参与.md)。
+更详细的编写流程请阅读 [如何参与](about/support.md)。
 
 <span style="float: right;">—— rogeryoungh</span>
