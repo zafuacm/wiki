@@ -90,6 +90,7 @@ nav:
     - 快速幂: basic/quick-pow.md
     - 结语: basic/end.md
   - 数据结构:
+    - 树状数组: struct/fenwick-tree.md
     - ST 表: struct/sparse-table.md
   - 其它:
     - Markdown: other/markdown.md
