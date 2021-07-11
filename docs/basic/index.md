@@ -10,8 +10,6 @@
 
 部分内容来自于 [OI-Wiki](https://oi-wiki.org/)，那里也有许多算法的介绍，感兴趣的可以看看。
 
-我不可能每个方向都面面俱到，当一道题卡住一个小时以上时，就可以去题解区看看了。
-
 ## 试机题
 
 - [P1001 A+B Problem](https://www.luogu.com.cn/problem/P1001)
