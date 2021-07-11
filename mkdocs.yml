@@ -1,0 +1,97 @@
+site_name: ZAFU ACM Wiki
+site_url: https://rogeryoungh.github.io/zafu-acm-wiki
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.instant
+#    - navigation.sections
+    - navigation.expand
+    - navigation.top
+  palette:
+    scheme: default
+    primary: white
+    accent: red
+  favicon: favicon.ico
+  icon:
+    logo: material/school
+    repo: fontawesome/brands/github-alt
+  include_search_page: false
+  search_index_only: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.progressbar
+  - pymdownx.smartsymbols
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - footnotes
+  - def_list
+  - attr_list
+  - pymdownx.tabbed
+  - toc:
+      permalink: ⚓︎
+      slugify: !!python/name:pymdownx.slugs.uslugify
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+
+
+copyright: Copyright 2020 - 2021 ZAFU ACM Team
+repo_url: https://github.com/RogerYoungh/zafu-acm-wiki
+repo_name: rogeryoungh/zafu-acm-wiki
+edit_uri: edit/main/docs/
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/RogerYoungh
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:rogeryoungh@foxmail.com
+
+
+extra_javascript:
+  - _static/config.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js
+
+extra_css:
+  - _static/extra.css
+
+nav:
+  - 基础:
+    - 简介: basic/index.md
+    - 算法思想: basic/basic.md
+    - 优化例题: basic/example.md
+    - 递归: basic/divide.md
+    - 二分: basic/binary.md
+    - 贪心: basic/greedy.md
+    - 排序: basic/sort.md
+    - 递推初步: basic/recursion.md
+    - 动态规划: basic/dp.md
+    - 前缀和 & 差分: basic/prefix-sum.md
+    - 快速幂: basic/quick-pow.md
+    - 结语: basic/end.md
+  - 其它:
+    - Markdown: other/markdown.md
+    - MkDocs: other/mkdocs.md
+  - 关于:
+    - 简介: index.md
+    - 如何参与: about/support.md
