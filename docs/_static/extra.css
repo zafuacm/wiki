@@ -3,3 +3,7 @@
 .md-typeset img, .md-typeset svg {
     max-width: none;
 }
+
+.md-typeset div.arithmatex {
+    overflow-y: hidden;
+}
