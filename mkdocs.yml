@@ -93,6 +93,7 @@ nav:
     - 最小表示法: string/minimal-string.md
   - 数学:
     - 中国剩余定理: math/crt.md
+    - 基础博弈: math/game-theory.md
   - 数据结构:
     - 树状数组: struct/fenwick-tree.md
     - ST 表: struct/sparse-table.md
