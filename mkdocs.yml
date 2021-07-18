@@ -1,5 +1,5 @@
 site_name: ZAFU ACM Wiki
-site_url: https://zafuacm.github.io/zafu-acm-wiki
+site_url: https://zafuacm.github.io/wiki
 
 theme:
   name: material
@@ -56,8 +56,8 @@ markdown_extensions:
 
 
 copyright: Copyright 2020 - 2021 ZAFU ACM Team
-repo_url: https://github.com/zafuacm/zafu-acm-wiki
-repo_name: zafuacm/zafu-acm-wiki
+repo_url: https://github.com/zafuacm/wiki
+repo_name: zafuacm/wiki
 edit_uri: edit/main/docs/
 
 extra:
