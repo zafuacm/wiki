@@ -89,6 +89,8 @@ nav:
     - 前缀和 & 差分: basic/prefix-sum.md
     - 快速幂: basic/quick-pow.md
     - 结语: basic/end.md
+  - 字符串:
+    - 最小表示法: string/minimal-string.md
   - 数学:
     - 中国剩余定理: math/crt.md
   - 数据结构:
