@@ -1,4 +1,4 @@
-# 快速 Fourier 变换
+# FFT
 
 前置知识：复数、原根、卷积。
 
@@ -6,8 +6,8 @@
 
 $$
 \begin{aligned}
-f(x) = \sum_{i=0}^n f_ix^i &=  f_0 + f_1 x + f_2x^2 + \cdots g_nx^n \\
-g(x) = \sum_{i=0}^n g_ix^i &=  g_0 + g_1 x + g_2x^2 + \cdots g_nx^n
+f(x) = \sum_{i=0}^n f_ix^i &=  f_0 + f_1 x + f_2x^2 + \cdots + g_nx^n \\
+g(x) = \sum_{i=0}^n g_ix^i &=  g_0 + g_1 x + g_2x^2 + \cdots + g_nx^n
 \end{aligned}
 $$
 
@@ -17,7 +17,7 @@ $$
 c_k = \sum_{i+j=k}f_ig_j
 $$
 
-于是计算多项式的乘积一共需要 $n^2$ 次系数乘法，我们需要优化。
+因此计算多项式的乘积需要 $n^2$ 次系数乘法，我们需要优化。
 
 ## 点值表示法
 
@@ -33,7 +33,7 @@ $$
 
 ## 单位原根
 
-称方程 $x^n = 1$ 的 $n$ 个解为单位根，其中特殊的一个记作 $\omega_n = e^{\frac{2 \pi i}{n}}$，称为单位原根。根据 Eular 公式，有
+称方程 $x^n = 1$ 的 $n$ 个解为单位根，其中特殊的一个记作 $\omega_n = e^{\frac{2 \pi i}{n}}$，称为单位原根。根据 Euler 公式，有
 
 $$
 \omega_n = e^{\tfrac{2 \pi i}{n}} = \cos \left(\frac{2\pi}{n}\right) + i \sin \left(\frac{2\pi}{n}\right)
@@ -74,7 +74,7 @@ $$
 $$
 \begin{aligned}
 f(x) &= f_0 + f_1x + f_2x^2 + f_3 x^3 + f_4 x^4 + f_5 x^5 + f_6 x^6 + f_7 x^7 \\
-&= (f_0 + f_2x^2 + f_4x^4 + f_6x^6) + x(a_1 + f_3x^2 + f_5x^4 + f_7x^6)
+&= (f_0 + f_2x^2 + f_4x^4 + f_6x^6) + x(f_1 + f_3x^2 + f_5x^4 + f_7x^6)
 \end{aligned}
 $$
 
@@ -165,10 +165,10 @@ void DFT(Comp *f, int n, int type) {
 
 $$
 \begin{matrix}
-初始    & 0    & 1    & 2    & 3    & 4    & 5    & 6    & 7    &\\
-初始(2) & 000  & 001  & 010  & 011  & 100  & 101  & 110  & 111  &\\
-结束(2) & 000  & 100  & 010  & 110  & 001  & 101  & 011  & 111  &\\
-结束    & 0    & 4    & 2    & 6    & 1    & 5    & 3    & 7    &
+\text{初始}    & 0    & 1    & 2    & 3    & 4    & 5    & 6    & 7    &\\
+\text{初始(2)} & 000  & 001  & 010  & 011  & 100  & 101  & 110  & 111  &\\
+\text{结束(2)} & 000  & 100  & 010  & 110  & 001  & 101  & 011  & 111  &\\
+\text{结束}    & 0    & 4    & 2    & 6    & 1    & 5    & 3    & 7    &
 \end{matrix}
 $$
 
@@ -251,11 +251,11 @@ $$
 
 这里展示全部的代码，帮助大家理解。
 
-??? Info "FFT 模板(P3803)"
+??? Info "FFT 模板（P3803）"
     ```cpp
     const double PI = acos(-1.0);
 
-    const int MN = 4e6 + 10;
+    const int MAXN = 4e6 + 10;
 
     struct Comp {
         double x, y;
@@ -275,8 +275,8 @@ $$
         }
     };
 
-    Comp ff[MN];
-    int rev[MN];
+    Comp ff[MAXN];
+    int rev[MAXN];
 
     void FFT(Comp *f, int n, int type) {
         for (int i = 0; i < n; ++i) {
