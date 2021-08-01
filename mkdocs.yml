@@ -94,7 +94,9 @@ nav:
   - 数学:
     - 中国剩余定理: math/crt.md
     - 基础博弈: math/game-theory.md
+    - 卷积: math/convolution.md
     - FFT: math/fft.md
+    - Dirichlet 卷积: math/dirichlet.md
   - 数据结构:
     - 树状数组: struct/fenwick-tree.md
     - ST 表: struct/sparse-table.md
