@@ -18,7 +18,7 @@ $$\sum_{k=1}^{n-1}h_kH_k$$
 
 利用高中时学的排序不等式，有
 
-$$反序和 \leqslant 乱序和 \leqslant 顺序和$$
+$${\rm 反序和} \leqslant {\rm 乱序和} \leqslant {\rm 顺序和}$$
 
 直接有反序最小。
 
