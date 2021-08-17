@@ -92,11 +92,13 @@ nav:
   - 字符串:
     - 最小表示法: string/minimal-string.md
   - 数学:
+    - 筛法: math/sieve.md
     - 中国剩余定理: math/crt.md
     - 基础博弈: math/game-theory.md
     - 卷积: math/convolution.md
     - FFT: math/fft.md
     - Dirichlet 卷积: math/dirichlet.md
+    - 积性函数: math/multiplicative-function.md
   - 数据结构:
     - 树状数组: struct/fenwick-tree.md
     - ST 表: struct/sparse-table.md

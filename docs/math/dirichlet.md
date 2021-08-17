@@ -54,7 +54,7 @@ $$
 \begin{aligned}
 \sum_{i=1}^n (f \ast g)(n) &= \sum_{i=1}^n \sum_{d=1}^i g(d) f\left(\frac{i}{d}\right)[d \mid i]\\
 &= \sum_{d=1}^n \sum_{i=d}^n g(d) f\left(\frac{i}{d}\right)[d \mid i]\\
-&= \sum_{d=1}^n g(d) \sum_{i=d}^{\lfloor n/i \rfloor} f(i)
+&= \sum_{d=1}^n g(d) \sum_{i=1}^{\lfloor n/d \rfloor} f(i)
 \end{aligned}
 $$
 
@@ -91,6 +91,15 @@ DG(f;s)DG(g;s) &= \left( \sum_{n=1}^\infty \frac{f(n)}{n^s} \right) \left( \sum_
 &= \sum_{n=1}^\infty \left( \sum_{ab=n} \frac{f(a)}{a^s} \frac{g(b)}{b^s} \right)\\
 &= \sum_{n=1}^\infty \left( \sum_{ab=n} \frac{(f \ast g)(n)}{n^s} \right)\\
 &= DG(f \ast g;s)
+\end{aligned}
+$$
+
+常见的有
+
+$$
+\begin{aligned}
+DG(\mu;s) &= \sum_{n=1}^\infty \frac{\mu(n)}{n^s} = \frac{1}{\zeta(s)} \\
+DG(\varphi;s) &= \sum_{n=1}^\infty \frac{\varphi(n)}{n^s} = \frac{\zeta(s-1)}{\zeta(s)}
 \end{aligned}
 $$
 
