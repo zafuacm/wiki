@@ -1,0 +1,16 @@
+main p > code {
+    color: #f14668;
+}
+
+main pre > code {
+    padding: 10px !important;
+}
+
+main p a, main ul a {
+    color: #0099ff !important;
+}
+
+.katex-display {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
