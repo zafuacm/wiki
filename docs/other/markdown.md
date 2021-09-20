@@ -126,9 +126,9 @@ pygments 支持 434 种语言的高亮，你可以在 [这里](https://cyent.git
 $$\sum_{n=1}^\infty \frac{1}{n^2} = \frac{\pi^2}{6}$$
 
 ```latex
-比如 \$a^2+b^2=c^2\$，
+比如 $a^2+b^2=c^2$，
 
-\$\$\sum_{n=1}^\infty \frac{1}{n^2} = \frac{\pi^2}{6}\$\$
+$$\sum_{n=1}^\infty \frac{1}{n^2} = \frac{\pi^2}{6}$$
 ```
 
 深入 $\rm\LaTeX$ 超出了我们的讨论范围，请您自行了解。
@@ -140,16 +140,16 @@ $$\sum_{n=1}^\infty \frac{1}{n^2} = \frac{\pi^2}{6}$$
 ```md
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | \$1600 |
-| col 2 is      | centered      |   \$12 |
-| zebra stripes | are neat      |    \$1 |
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 ```
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | \$1600 |
-| col 2 is      | centered      |   \$12 |
-| zebra stripes | are neat      |    \$1 |
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 ## 脚注
 
