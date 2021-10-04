@@ -1,6 +1,6 @@
 # MkDocs
 
-我开始使用的是 [MdBook](https://rust-lang.github.io/mdBook/)，因为缺失一些重要的功能，不得不换到了 [MkDocs](https://squidfunk.github.io/mkdocs-material/)。
+决定同时使用 MdBook，应该尽量避免使用这里不通用的东西。
 
 这里介绍一些 MkDocs 特有的格式。
 

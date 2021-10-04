@@ -18,7 +18,9 @@ return ans;
 
 假设初始为 $a$，自乘后得到 $a^2$，再对结果自乘得到 $a^4$，反复下去，我们可以得到一列数
 
-$$a \to a^2 \to a^{4} \to a^{8} \to a^{16} \to a^{32} \to a^{64} \to \cdots$$
+$$
+a \to a^2 \to a^{4} \to a^{8} \to a^{16} \to a^{32} \to a^{64} \to \cdots
+$$
 
 容易发现，它的指数的增长速度是 $2^k$，比线性增长的速度快的多。
 
@@ -28,7 +30,12 @@ $$a \to a^2 \to a^{4} \to a^{8} \to a^{16} \to a^{32} \to a^{64} \to \cdots$$
 
 很自然的想到
 
-$$a^n = \begin{cases} a^{n-1} \times a, &n \bmod 2 = 1\\ a^{\frac{n}{2}} \times a^{\frac{n}{2}}, &n \bmod 2 = 0 \end{cases}$$
+$$
+a^n = \begin{cases}
+a^{n-1} \times a, &n \bmod 2 = 1\\
+a^{\frac{n}{2}} \times a^{\frac{n}{2}}, &n \bmod 2 = 0
+\end{cases}
+$$
 
 可以据此实现代码
 
@@ -46,8 +53,9 @@ int qpow(int a, int n) {
 }
 ```
 
-!!! question "思考"
-    为什么不写 `qpow(a, n / 2) * qpow(a, n / 2)`，而用 `t` 进行存储？
+> **思考**
+> 
+> 为什么不写 `qpow(a, n / 2) * qpow(a, n / 2)`，而用 `t` 进行存储？
 
 递归本身也具有一定的开销，我们可以稍加思考，改进得到非递归法。
 
@@ -55,7 +63,9 @@ int qpow(int a, int n) {
 
 还是讨论 $a^{100}$，我们可以把它拆分成“平方法”数列中的项的乘积
 
-$$a^{100} = a^{64} \times a^{32} \times a^4$$
+$$
+a^{100} = a^{64} \times a^{32} \times a^4
+$$
 
 那么对于任意的 $n$，如何拆分 $a^n$ 才可以利用平方法加速呢？
 
@@ -63,7 +73,13 @@ $$a^{100} = a^{64} \times a^{32} \times a^4$$
 
 因为 $100_{10} = 1100100_2$，于是有
 
-$$\begin{matrix} & a^1 & a^2 & a^4 & a^8 & a^{16} & a^{32} & a^{64} \\100 & & & 4 & & & 32 & 64\\100 & 0 & 0 & 1 & 0 & 0 & 1 & 1 \\\end{matrix}$$
+$$
+\begin{matrix} 
+& a^1 & a^2 & a^4 & a^8 & a^{16} & a^{32} & a^{64} \\
+100 & & & 4 & & & 32 & 64\\
+100 & 0 & 0 & 1 & 0 & 0 & 1 & 1 
+\end{matrix}
+$$
 
 即二进制下该位为 $1$，则计算该位的贡献；若该位为 $0$，则不计算该位的贡献。
 
@@ -105,15 +121,24 @@ ll qpow(ll a, ll b, ll p) {
 
 拿我们熟悉的 Fibonacci 数列举例
 
-$$F_{n+2} = F_{n+1} + F_{n}$$ 
+$$
+F_{n+2} = F_{n+1} + F_{n}
+$$ 
 
 可以写成矩阵乘法形式
 
-$$\left(\begin{matrix}F_{n+1}\\F_{n+2}\end{matrix}\right) = \left(\begin{matrix}0 & 1\\1 & 1\end{matrix}\right)\left(\begin{matrix}F_{n}\\F_{n+1}\end{matrix}\right)$$
+$$
+\left(\begin{matrix}F_{n+1}\\F_{n+2}\end{matrix}\right)
+= \left(\begin{matrix}0 & 1\\1 & 1\end{matrix}\right)
+\left(\begin{matrix}F_{n}\\F_{n+1}\end{matrix}\right)
+$$
 
 设 $P = \left(\begin{matrix}0 & 1\\1 & 1\end{matrix}\right)$ ，于是有
 
-$$\left(\begin{matrix}F_{n+1}\\F_{n+2}\end{matrix}\right) = P^n\left(\begin{matrix}F_{1}\\F_{2}\end{matrix}\right)$$
+$$
+\left(\begin{matrix}F_{n+1}\\F_{n+2}\end{matrix}\right)
+= P^n\left(\begin{matrix}F_{1}\\F_{2}\end{matrix}\right)
+$$
 
 可以对矩阵使用快速幂，那么计算第 $n$ 项只需 $O(\log n)$。
 

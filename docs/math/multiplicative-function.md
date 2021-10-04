@@ -132,64 +132,58 @@ $$
 
 定义 $f(p^c) = p \oplus c$。
 
-因此 $g(p) = f(p) = p - 1 + 2 [p = 2]$。与筛 $\varphi$
-操作一样，最后加上 $2$ 即可。
+因此 $g(p) = f(p) = p - 1 + 2 [p = 2]$。与筛 $\varphi$ 操作一样，最后加上 $2$ 即可。
 
-??? Info "Min25 模板（LOJ 6053）"
-    ```cpp
-    const ll mod = 1000000007, inv2 = 500000004;
-    const int maxn = 200005;
-    ll n, prime[maxn], cnt, w[maxn], s[maxn], c[maxn];
-    ll sqrt_n, m;
+```cpp
+const ll mod = 1000000007, inv2 = 500000004;
+const int maxn = 200005;
+ll n, prime[maxn], cnt, w[maxn], s[maxn], c[maxn];
+ll sqrt_n, m;
 
-    ll mo(ll x) {
-        return (x + mod) % mod;
+ll f_p(ll p, ll e) {
+    return p ^ e;
+}
+
+int id(ll x) {
+    return x <= sqrt_n ? x : m - (n / x) + 1;
+}
+
+ll F(ll n, int k) {
+    if(n <= prime[k])
+        return 0;
+    ll ret = s[id(n)] - s[prime[k]];
+    for (int i = k + 1; i <= cnt && prime[i] * prime[i] <= n; i++) {
+        ll pi = prime[i], pk = pi;
+        for (int c = 1; pk * pi <= n; c++, pk *= pi)
+            ret += f_p(pi, c) * F(n / pk, i) + f_p(pi, c + 1);
     }
+    return mo(ret + mod) % mod;
+}
 
-    ll f_p(ll p, ll e) {
-        return p ^ e;
+int main() {
+    n = rr();
+    sqrt_n = sqrt(n + 0.01);
+    m = cnt = 0;
+    for (ll l = 1, r; l <= n; l = r + 1) {
+        w[++m] = r = n / (n / l);
+        ll mr = r % mod;
+        s[m] = mr * (mr + 1) / 2 - 1;
+        c[m] = mr - 1;
     }
-
-    int id(ll x) {
-        return x <= sqrt_n ? x : m - (n / x) + 1;
-    }
-
-    ll F(ll n, int k) {
-        if(n <= prime[k])
-            return 0;
-        ll ret = s[id(n)] - s[prime[k]];
-        for (int i = k + 1; i <= cnt && prime[i] * prime[i] <= n; i++) {
-            ll pi = prime[i], pk = pi;
-            for (int c = 1; pk * pi <= n; c++, pk *= pi)
-                ret += f_p(pi, c) * F(n / pk, i) + f_p(pi, c + 1);
-        }
-        return mo(ret);
-    }
-
-    int main() {
-        n = rr();
-        sqrt_n = sqrt(n + 0.01);
-        m = cnt = 0;
-        for (ll l = 1, r; l <= n; l = r + 1) {
-            w[++m] = r = n / (n / l);
-            ll mr = mo(r);
-            s[m] = mr * (mr + 1) / 2 - 1;
-            c[m] = mr - 1;
-        }
-        for (ll p = 2; p <= sqrt_n; p++) {
-            if(c[p] != c[p - 1]) {
-                prime[++cnt] = p;
-                for (ll j = m; w[j] >= p * p; j--) {
-                    s[j] -= p * (s[id(w[j] / p)] - s[p - 1]);
-                    c[j] -= c[id(w[j] / p)] - c[p - 1];
-                }
+    for (ll p = 2; p <= sqrt_n; p++) {
+        if(c[p] != c[p - 1]) {
+            prime[++cnt] = p;
+            for (ll j = m; w[j] >= p * p; j--) {
+                s[j] -= p * (s[id(w[j] / p)] - s[p - 1]);
+                c[j] -= c[id(w[j] / p)] - c[p - 1];
             }
         }
-        for (int i = 2; i <= m; i++)
-            s[i] = mo(s[i] - c[i] + 2);
-        printf("%lld", F(n, 0) + 1);
     }
-    ```
+    for (int i = 2; i <= m; i++)
+        s[i] = mo(s[i] - c[i] + 2);
+    printf("%lld", F(n, 0) + 1);
+}
+```
 
 ### P4213 杜教筛
 
@@ -216,7 +210,6 @@ $$
 TODO
 
 ## 舟阁筛
-
 
 设 $n$ 的唯一分解是
 

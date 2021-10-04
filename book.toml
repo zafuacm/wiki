@@ -1,0 +1,18 @@
+[book]
+authors = ["zafu-acm-team"]
+language = "zh-cn"
+multilingual = false
+src = "docs"
+title = "ZAFU ACM Wiki"
+
+[output.html]
+additional-css = ["docs/_static/extra.css"]
+git-repository-url = "https://github.com/zafuacm/wiki/"
+edit-url-template = "https://github.com/zafuacm/wiki/edit/main/{path}"
+
+[output.html.fold]
+enable = true
+level = 1
+
+[preprocessor.katex]
+[output.katex]

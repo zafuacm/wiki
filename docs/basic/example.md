@@ -55,12 +55,20 @@ for (int c = 0; c <= n/50; c++) {
 
 优化 2 中我们得到了一个求和式，其实可以对求和式直接计算。提出首项
 
-$$\sum_{i=0}^{2k}\left(\lfloor 5k-2.5i \rfloor + 1\right) = 5k + \sum_{i=1}^{2k}\lfloor 5k-2.5i \rfloor + 2k$$
+$$
+\sum_{i=0}^{2k}\left(\lfloor 5k-2.5i \rfloor + 1\right)
+= 5k + \sum_{i=1}^{2k}\lfloor 5k-2.5i \rfloor + 2k
+$$
 
 分奇偶展开有
 
-$$\begin{aligned}
-\sum_{i=1}^{2k}\lfloor 5k-2.5i \rfloor &= \sum_{i=1}^{k}\lfloor 5k-2.5(2i-1) \rfloor + \sum_{i=1}^{k}\lfloor 5k-2.5(2i) \rfloor \\&= \sum_{i=1}^{k}(10k-10i+2) = 5k^2 -3k + 1\end{aligned}$$
+$$
+\begin{aligned}
+\sum_{i=1}^{2k}\lfloor 5k-2.5i \rfloor
+&= \sum_{i=1}^{k}\lfloor 5k-2.5(2i-1) \rfloor + \sum_{i=1}^{k}\lfloor 5k-2.5(2i) \rfloor \\
+&= \sum_{i=1}^{k}(10k-10i+2) = 5k^2 -3k + 1
+\end{aligned}
+$$
 
 于是可以写出代码
 
@@ -68,10 +76,8 @@ $$\begin{aligned}
 sum = (5 * k + 4) * k + 1;
 ```
 
-!!! info "提示"
-
-    直接抄是过不了题的，观察一下数据范围。
-
-    有时候拿不了全分，也要争取部分分。
+> **提示**
+>
+> 直接抄是过不了题的，观察一下数据范围。有时候拿不了全分，也要争取部分分。
 
 三思而后行。
