@@ -76,6 +76,9 @@ extra_css:
   - _static/extra.css
 
 nav:
+  - 关于:
+    - 简介: index.md
+    - 如何参与: about/support.md
   - 基础:
     - 简介: basic/index.md
     - 算法思想: basic/basic.md
@@ -90,8 +93,10 @@ nav:
     - 快速幂: basic/quick-pow.md
     - 结语: basic/end.md
   - 字符串:
+    - 简介: string/index.md
     - 最小表示法: string/minimal-string.md
   - 数学:
+    - 简介: math/index.md
     - 筛法: math/sieve.md
     - 中国剩余定理: math/crt.md
     - 基础博弈: math/game-theory.md
@@ -100,11 +105,9 @@ nav:
     - Dirichlet 卷积: math/dirichlet.md
     - 积性函数: math/multiplicative-function.md
   - 数据结构:
+    - 简介: struct/index.md
     - 树状数组: struct/fenwick-tree.md
     - ST 表: struct/sparse-table.md
   - 其它:
     - Markdown: other/markdown.md
     - MkDocs: other/mkdocs.md
-  - 关于:
-    - 简介: index.md
-    - 如何参与: about/support.md

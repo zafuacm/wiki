@@ -18,7 +18,7 @@
 
 首先你需要有一个 GitHub 帐号，但不需要高超的 GitHub 技巧。
 
-1. 点击标题右边的编辑按钮 :fontawesome-solid-pen: ，开始编辑。
+1. 点击标题右边的编辑按钮，开始编辑。
 2. 在编辑框里进行修改。由于 MkDocs 支持一些扩展 Markdown，它不一定能在 GitHub 的预览里很好的展示。
 3. 写好了之后点下方的绿色按钮 Propose changes 提交修改。但是，GitHub 可能会提示你没有权限。不必担心！GitHub 会自动帮你将 本项目 的所有文件复制一份，放到你的仓库中（fork）并创建申请合并更改的请求 (Pull Request)；
 4. 之后，点上方的绿色按钮 (Create pull request) 后，GitHub 会跳转到一个新的页面 Open a pull request。删掉方框里的文字，简单写写你做的修改，然后再点一下下面的绿色按钮 (Create pull request)；
