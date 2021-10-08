@@ -41,3 +41,7 @@ int ask(int x, int y) {
 ## 练习
 
 - [P3865 【模板】ST 表](https://www.luogu.com.cn/problem/P3865)
+
+------
+
+本页面贡献者：[@rogeryoungh](https://github.com/rogeryoungh)

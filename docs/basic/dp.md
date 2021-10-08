@@ -110,3 +110,7 @@ for (int i = 0; i < n; i++)
 - [P1359 租用游艇](https://www.luogu.com.cn/problem/P1359)
 - [P1020 导弹拦截](https://www.luogu.com.cn/problem/P1020)
 - [P1434 滑雪](https://www.luogu.com.cn/problem/P1434)
+
+------
+
+本页面贡献者：[@rogeryoungh](https://github.com/rogeryoungh)

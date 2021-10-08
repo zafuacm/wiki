@@ -59,3 +59,7 @@ void quick_sort(int l, int r) {
 - [P1177 快速排序](https://www.luogu.com.cn/problem/P1177)
 - [P1923 求第 k 小的数 ](https://www.luogu.com.cn/problem/P1923)
 - [P1908 逆序对](https://www.luogu.com.cn/problem/P1908)（提示：两重循环会超时哦）
+
+------
+
+本页面贡献者：[@rogeryoungh](https://github.com/rogeryoungh)

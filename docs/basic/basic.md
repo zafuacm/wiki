@@ -53,3 +53,7 @@
 提前计算一些可能用到的数据，这样会避免每次计算带来的额外开销。
 
 有时也叫打表。
+
+------
+
+本页面贡献者：[@rogeryoungh](https://github.com/rogeryoungh)

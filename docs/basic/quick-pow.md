@@ -146,3 +146,7 @@ $$
 
 - [P1226 【模板】快速幂](https://www.luogu.com.cn/problem/P1226)
 - [P1962 斐波那契数列](https://www.luogu.com.cn/problem/P1962)
+
+------
+
+本页面贡献者：[@rogeryoungh](https://github.com/rogeryoungh)
