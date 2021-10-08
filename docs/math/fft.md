@@ -336,3 +336,7 @@ FFT 是卷积计算的基础工具。更多应用见 [卷积](../convolution/)�
 ## 练习
 
 - [P3803 多项式乘法](https://www.luogu.com.cn/problem/P3803)
+
+------
+
+本页面贡献者：[@rogeryoungh](https://github.com/rogeryoungh)

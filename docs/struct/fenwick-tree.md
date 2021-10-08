@@ -95,3 +95,7 @@ int cask(int x) {
 - [L132 树状数组 3：区间修改，区间查询](https://loj.ac/problem/132)
 - [L133 二维树状数组 1：单点修改，区间查询](https://loj.ac/problem/133)
 - [L135 二维树状数组 3：区间修改，区间查询](https://loj.ac/problem/135)
+
+------
+
+本页面贡献者：[@rogeryoungh](https://github.com/rogeryoungh)

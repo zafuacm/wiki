@@ -61,3 +61,7 @@ return min(i, j);
 ## 习题
 
 [P1368 最小表示法](https://www.luogu.com.cn/problem/P1368)
+
+------
+
+本页面贡献者：[@sy](https://github.com/clumsy-sy)

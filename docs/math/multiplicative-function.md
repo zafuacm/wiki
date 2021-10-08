@@ -293,3 +293,7 @@ $$
 总复杂度 $O\left( \dfrac{n^{\frac{3}{4}}}{\log n} \right)$。我们要求 $f(p)$​ 是容易计算的，否则其会增加额外的损耗。
 
 因为出现了更好用的 Min_25 筛，舟阁筛已经用不到了。
+
+------
+
+本页面贡献者：[@rogeryoungh](https://github.com/rogeryoungh)

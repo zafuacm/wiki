@@ -15,3 +15,7 @@
 ## 贡献
 
 如果您对参与编写感兴趣，只需点击标题右边的编辑按钮，即可编辑。更详细的编写流程请阅读 [如何参与](about/support.md)。
+
+------
+
+本页面贡献者：[@rogeryoungh](https://github.com/rogeryoungh)

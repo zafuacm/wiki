@@ -62,3 +62,7 @@ return l;
 - [P1873 砍树](https://www.luogu.com.cn/problem/P1873)
 - [P2678 跳石头](https://www.luogu.com.cn/problem/P2678)
 
+------
+
+本页面贡献者：[@rogeryoungh](https://github.com/rogeryoungh)
+
