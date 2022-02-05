@@ -294,6 +294,10 @@ $$
 
 因为出现了更好用的 Min_25 筛，舟阁筛已经用不到了。
 
+## 参考资料
+
+- [Min_25 筛 - OI Wiki](https://oi-wiki.org/math/number-theory/min-25/)
+
 ------
 
 本页面贡献者：[@rogeryoungh](https://github.com/rogeryoungh)

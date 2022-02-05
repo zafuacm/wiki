@@ -10,6 +10,8 @@ ST 表仅适用于 **可重复贡献问题** 问题。
 
 令 $ST(i,j)$ 表示区间 $[i,i+2^j-1]$ 的最大值，显然 $ST(i,0)=a_i$。
 
+熟悉 C++ 的同学可能知道，`std::__lg` 可以 $O(1)$ 的计算 $\log_2$，不再需要预处理。
+
 以 $\max$ 为例，我们可以列出状态转移方程
 
 $$
@@ -19,11 +21,13 @@ $$
 于是可以写出代码
 
 ```cpp
-for (int j = 0; j <= lg2n-1; j++) {
-    int tj = 1 << j;
-    int ti = n - (1 << (j+1)) + 1;
+for (int i = 1; i <= n; i++) {
+    st[0][i] = a[i];
+}
+for (int j = 1; j <= std::__lg(n); j++) {
+    int tj = 1 << (j - 1), ti = n - tj * 2 + 1;
     for (int i = 1; i <= ti; i++) {
-        ST[i][j+1] = max(ST[i][j], ST[i+tj][j]);
+        st[j][i] = max(st[j - 1][i], st[j - 1][i + tj]);
     }
 }
 ```
@@ -31,10 +35,9 @@ for (int j = 0; j <= lg2n-1; j++) {
 记 $s = \lfloor\log_2(r-l+1)\rfloor$，我们总是可以用两个区间 $[l,l+2^s-1]$ 和 $[r-2^s+1,r]$ 来覆盖所查询区间。
 
 ```cpp
-int ask(int x, int y) {
-    int s = lg2[y-x+1];
-    int tx = ST[x][s], ty = ST[y-(1<<s)+1][s];
-    return max(tx,ty);
+int query(int x, int y) {
+    int s = std::__lg(y - x + 1);
+    return max(st[s][x], st[s][y - (1 << s) + 1]);
 }
 ```
 
