@@ -67,9 +67,11 @@ for (int i = 0; i < n; i++) {
 
 ```cpp
 f[0] = 0;
-for (int i = 0; i < n; i++)
-    for (int j = m; j >= v[i]; j--)
+for (int i = 0; i < n; i++) {
+    for (int j = m; j >= v[i]; j--) {
         f[j] = max(f[j], f[j - v[i]] + w[i]);
+    }
+}
 ```
 
 同样，矩阵取数也可以使用滚动数组。
@@ -82,9 +84,11 @@ for (int i = 0; i < n; i++)
 
 ```cpp
 f[0] = 0;
-for (int i = 0; i < n; i++)
-    for (int j = v[i]; j <= v[i]; j++)
+for (int i = 0; i < n; i++) {
+    for (int j = v[i]; j <= v[i]; j++) {
         f[j] = max(f[j], f[j - v[i]] + w[i]);
+    }
+}
 ```
 
 ## 最长公共子序列

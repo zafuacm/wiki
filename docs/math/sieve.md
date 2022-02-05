@@ -11,15 +11,15 @@
 从 $2$ 开始，把每一个遇到的数的倍数都从表中划去，则接下来第一个没被划到的数必为质数。再划去该数的倍数，找到下一个没被划到的质数……
 
 ```cpp
-bool notp[MAXN];
-int prime[MAXN/10], cnt;
+vector<bool> not_p;
+vector<int> primes;
 void Eratosthenes(int n) {
+    not_p.resize(n + 1);
     for (int i = 2; i <= n; i++) {
-        if (!notp[i]) {
-            prime[++cnt] = i;
-            int tn = n / i;
-            for (int j =  i; j <= tn; j++)
-                notp[i * j] = true;
+        if (!not_p[i]) {
+            primes.push_back(i);
+            for (int j = i; j < n / i; j++)
+                not_p[i * j] = true;
         }
     }
 }
@@ -40,18 +40,17 @@ void Eratosthenes(int n) {
 因此对于每个合数，一定且仅会因为最小因子筛掉。因此复杂度 $O(n)$，故此筛法也称为线性筛。
 
 ```cpp
-bool notp[MAXN];
-int prime[MAXN/10], cnt;
+vector<bool> not_p;
+vector<int> primes;
 void Euler(int n) {
+    not_p.resize(n + 1);
     for (int i = 2; i <= n; i++) {
-        if (!notp[i])
-            prime[++cnt] = i;
-        int t = n / i;
-        for (int j =  1; j <= cnt; j++) {
-            int pj = prime[j];
-            if (pj > t)
+        if (!not_p[i])
+            primes.push_back(i);
+        for (auto pj : primes) {
+            if (pj > n / i)
                 break;
-            notp[i * pj] = true;
+            not_p[i * pj] = true;
             if (i % pj == 0)
                 break;
         }
@@ -80,33 +79,41 @@ $$
 并且要求 $f(p)$ 也要容易计算，有代码
 
 ```cpp
-bool notp[MAXN];
-int prime[MAXN/10], cnt;
-int mu[MAXN], phi[MAXN];
-void sieve(int n) {
-    phi[1] = mu[1] = 1;
+vector<bool> not_p;
+vector<int> primes, phi, mu;
+void Euler(int n) {
+    not_p.resize(n + 1);
+    phi.resize(n + 1);
+    mu.resize(n + 1);
+    mu[1] = phi[1] = 1;
     for (int i = 2; i <= n; i++) {
-        if (!notp[i]) {
-            prime[++cnt] = i;
+        if (!not_p[i]) {
+            primes.push_back(i);
             phi[i] = i - 1, mu[i] = -1;
         }
-        int t = n / i;
-        for (int j = 1; j <= cnt;j++) {
-            int pj = prime[j], ti = i * pj;
-            if (pj > t)
+        for (auto pj : primes) {
+            if (pj > n / i)
                 break;
-            notp[ti] = true;
+            not_p[i * pj] = true;
             if (i % pj == 0) {
-                phi[ti] = phi[i] * pj;
-                mu[ti] = 0;
+                phi[i * pj] = phi[i] * pj;
+                mu[i * pj] = 0;
                 break;
             }
-            phi[ti] = phi[i] * phi[pj];
-            mu[ti] = mu[i] * mu[pj];
+            phi[i * pj] = phi[i] * (pj - 1);
+            mu[i * pj] = -mu[i];
         }
     }
 }
 ```
+
+## 例题
+
+- [P2568 GCD](https://www.luogu.com.cn/problem/P2568)，本题有 $\phi(x)$ 和 $\mu(x)$ 两种做法，详见 [题解](https://rogeryoungh.github.io/code-of-acm/post/2021-05/p2257/)，需要一定数学推导。
+
+## 参考资料
+
+- [筛法 - OI Wiki](https://oi-wiki.org/math/number-theory/sieve/)。
 
 ------
 

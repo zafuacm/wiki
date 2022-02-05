@@ -48,10 +48,10 @@ $$
 由前论述，先手一定存在取走 $k$ 的取法，转为后手永远不败。
 
 ```cpp
-int Nim(ll *aa, ll n) {
+bool Nim(const vector<ll> &a, ll n) {
     ll ans = 0;
-    for (int i = 1; i <= n; i++)
-        ans = ans ^ aa[i];
+    for (auto ai : a)
+        ans ^= ai;
     if (ans == 0)
         return true;
     return false;
@@ -70,7 +70,7 @@ int Nim(ll *aa, ll n) {
 
 ```cpp
 const ld phi = 1.6180339887498948482045868343656;
-int Wythoff(ll a, ll b) {
+bool Wythoff(ll a, ll b) {
     if (a > b)
         swap(a, b);
     ll t = (ll) (b - a) * phi;
