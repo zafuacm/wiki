@@ -6,9 +6,9 @@ theme:
   language: zh
   features:
     - navigation.tabs
-    - navigation.indexes
+    # - navigation.indexes
     - navigation.instant
-#    - navigation.sections
+    - navigation.sections
     - navigation.expand
     - navigation.top
   palette:
@@ -100,10 +100,13 @@ nav:
     - 筛法: math/sieve.md
     - 中国剩余定理: math/crt.md
     - 基础博弈: math/game-theory.md
-    - 卷积: math/convolution.md
-    - FFT: math/fft.md
     - Dirichlet 卷积: math/dirichlet.md
     - 积性函数: math/multiplicative-function.md
+    - 多项式:
+      - 简介: math/poly/index.md
+      - FFT: math/poly/fft.md
+      - 卷积: math/poly/convolution.md
+      - 牛顿迭代: math/poly/newton.md
   - 数据结构:
     - 简介: struct/index.md
     - 树状数组: struct/fenwick-tree.md
