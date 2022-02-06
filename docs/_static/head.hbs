@@ -1,0 +1,49 @@
+<style>
+main p > code {
+    color: #f14668 !important;
+    background: unset  !important;
+}
+
+main pre > code {
+    padding: 10px !important;
+}
+
+main p a, main ul a {
+    color: #0099ff !important;
+}
+
+.katex-display {
+    overflow: auto hidden;
+}
+</style>
+
+<link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.13.16/katex.min.css">
+<script defer src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.13.16/katex.min.js"></script>
+<script defer src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.13.16/contrib/auto-render.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+
+        delimiters: [
+            { left: '$$', right: '$$', display: true },
+            { left: '$', right: '$', display: false },
+            { left: '\\(', right: '\\)', display: false },
+            { left: '\\[', right: '\\]', display: true },
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+        ],
+        macros: {
+            "\\RR": "\\mathbb{R}",
+            "\\NN": "\\mathbb{N}",
+            "\\QQ": "\\mathbb{Q}",
+            "\\ZZ": "\\mathbb{Z}",
+            "\\CC": "\\mathbb{C}",
+            "\\ee": "\\mathrm{e}",
+            "\\dd": "\\mathrm{d}",
+            "\\eps": "\\varepsilon",
+        },
+        globalGroup: true,
+        throwOnError: false
+    });
+});
+</script>
