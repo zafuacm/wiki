@@ -42,7 +42,3 @@ $$
 - [P1595 信封问题](https://www.luogu.com.cn/problem/P1595)
 - [P1115 最大子段和](https://www.luogu.com.cn/problem/P1115)
 - [P1962 斐波那契数列](https://www.luogu.com.cn/problem/P1962)
-
-------
-
-本页面贡献者：[@rogeryoungh](https://github.com/rogeryoungh)

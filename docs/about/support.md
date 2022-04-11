@@ -29,7 +29,3 @@
 ## 我之前用过 GitHub
 
 大胆写吧！
-
-------
-
-本页面贡献者：[@rogeryoungh](https://github.com/rogeryoungh)

@@ -55,7 +55,3 @@ ll crt(const vector<ll> &aa, const vector<ll> &nn) {
 ## 练习
 
 - [P1495 【模板】中国剩余定理(CRT)/曹冲养猪](https://www.luogu.com.cn/problem/P1495)
-
-------
-
-本页面贡献者：[@rogeryoungh](https://github.com/rogeryoungh)
