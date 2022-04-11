@@ -8,7 +8,7 @@ title = "ZAFU ACM Wiki"
 [preprocessor.katex]
 
 [output.html]
-theme = "docs/_static"
+theme = "theme/mdbook/"
 additional-css = ["docs/_static/extra.css"]
 git-repository-url = "https://github.com/zafuacm/wiki/"
 edit-url-template = "https://github.com/zafuacm/wiki/edit/main/{path}"
