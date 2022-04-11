@@ -102,7 +102,3 @@ DG(\mu;s) &= \sum_{n=1}^\infty \frac{\mu(n)}{n^s} = \frac{1}{\zeta(s)} \\
 DG(\varphi;s) &= \sum_{n=1}^\infty \frac{\varphi(n)}{n^s} = \frac{\zeta(s-1)}{\zeta(s)}
 \end{aligned}
 $$
-
-------
-
-本页面贡献者：[@rogeryoungh](https://github.com/rogeryoungh)

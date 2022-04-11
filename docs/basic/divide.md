@@ -86,7 +86,3 @@ int f(int n) {
 
 - [P2089 烤鸡](https://www.luogu.com.cn/problem/P2089)
 - [P1464 Function](https://www.luogu.com.cn/problem/P1464)
-
-------
-
-本页面贡献者：[@rogeryoungh](https://github.com/rogeryoungh)

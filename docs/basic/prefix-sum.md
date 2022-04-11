@@ -98,7 +98,3 @@ return sum - ans;
 ## 扩展 · 二维前缀和
 
 ## 扩展 · 高维前缀和
-
-------
-
-本页面贡献者：[@rogeryoungh](https://github.com/rogeryoungh)

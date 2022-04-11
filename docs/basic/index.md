@@ -15,8 +15,3 @@
 - [P1001 A+B Problem](https://www.luogu.com.cn/problem/P1001)
 - [P1047 校门外的树](https://www.luogu.com.cn/problem/P1047)
 - [P2181 对角线](https://www.luogu.com.cn/problem/P2181)
-
-------
-
-本页面贡献者：[@rogeryoungh](https://github.com/rogeryoungh)
-

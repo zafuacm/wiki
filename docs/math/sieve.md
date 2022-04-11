@@ -114,8 +114,3 @@ void Euler(int n) {
 ## 参考资料
 
 - [筛法 - OI Wiki](https://oi-wiki.org/math/number-theory/sieve/)。
-
-------
-
-本页面贡献者：[@rogeryoungh](https://github.com/rogeryoungh)
-

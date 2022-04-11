@@ -294,7 +294,3 @@ FFT 是卷积计算的基础工具。更多应用见 [卷积](../convolution/)�
 ## 参考资料
 
 - [快速傅里叶变换 - OI Wiki](https://oi-wiki.org/math/poly/fft/)
-
-------
-
-本页面贡献者：[@rogeryoungh](https://github.com/rogeryoungh)
