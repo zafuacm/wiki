@@ -7,9 +7,13 @@ title = "ZAFU ACM Wiki"
 
 [preprocessor.katex]
 
+[preprocessor.admonish]
+command = "mdbook-admonish"
+assets_version = "2.0.0" # do not edit: managed by `mdbook-admonish install`
+
 [output.html]
 theme = "theme/mdbook/"
-additional-css = ["docs/_static/extra.css"]
+additional-css = ["docs/_static/extra.css", "theme/mdbook/mdbook-admonish.css"]
 git-repository-url = "https://github.com/zafuacm/wiki/"
 edit-url-template = "https://github.com/zafuacm/wiki/edit/main/{path}"
 

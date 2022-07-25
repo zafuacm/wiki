@@ -1,4 +1,4 @@
-name: Publish docs via GitHub Pages
+name: mdBook generate docs
 on:
   push:
     branches:
@@ -14,22 +14,12 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up Python 3.9
-        uses: actions/setup-python@v3
-        with:
-          python-version: 3.9
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Build with mkdocs
-        run: mkdocs build -v
+      - name: Build with mdBook
+        run: scripts/build.sh
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+          publish_dir: ./book
