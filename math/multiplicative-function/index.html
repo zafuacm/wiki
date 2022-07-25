@@ -1342,7 +1342,7 @@ F(n, k) &amp; = \sum_{p_k &lt; p_i \leqslant \sqrt{n}} \sum_{p_i^c \leqslant n} 
 F(n, k) = \sum_{p_k &lt; p_i \leqslant \sqrt{n}} \sum_{p_i^{c + 1} \leqslant n} \left(f(p_i^c) g \left( \left\lfloor \frac{n}{p_i^c} \right\rfloor, i \right) + f(p_i^{c + 1}) \right) + h(n) - h (p_i)
 \]</div>
 <p>如上所述，我们可以写出递归代码。取模有时可以用 <code>int128</code> 优化。</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -1352,7 +1352,7 @@ F(n, k) = \sum_{p_k &lt; p_i \leqslant \sqrt{n}} \sum_{p_i^{c + 1} \leqslant n} 
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">ll</span><span class="w"> </span><span class="nf">F</span><span class="p">(</span><span class="n">ll</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">k</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">ll</span><span class="w"> </span><span class="nf">F</span><span class="p">(</span><span class="n">ll</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">k</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">prime</span><span class="p">[</span><span class="n">k</span><span class="p">])</span><span class="w"></span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="n">ll</span><span class="w"> </span><span class="n">ret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">[</span><span class="n">id</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">s</span><span class="p">[</span><span class="n">prime</span><span class="p">[</span><span class="n">k</span><span class="p">]];</span><span class="w"></span>
@@ -1363,8 +1363,7 @@ F(n, k) = \sum_{p_k &lt; p_i \leqslant \sqrt{n}} \sum_{p_i^{c + 1} \leqslant n} 
 <span class="w">    </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">mo</span><span class="p">(</span><span class="n">ret</span><span class="p">);</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <h3 id="part-2">Part 2<a class="headerlink" href="#part-2" title="Permanent link">⚓︎</a></h3>
 <p>接下来，关键在于求 <span class="arithmatex">\(h\)</span>。预处理 <span class="arithmatex">\([1,n]\)</span> 所有的 <span class="arithmatex">\(h\)</span> 不但时间上不够，空间上也不够。注意到我们所有用到的 <span class="arithmatex">\(h(x)\)</span> 都是 <span class="arithmatex">\(F(n,0)\)</span> 递归产生的，分类讨论：</p>
 <ul>
@@ -1388,7 +1387,7 @@ G_k(n) = G_{k - 1}(n) - g(p_k) \left( G_{k - 1} \left( \left\lfloor \frac{n}{p_k
 <h3 id="loj-6053-简单的函数">LOJ 6053 简单的函数<a class="headerlink" href="#loj-6053-简单的函数" title="Permanent link">⚓︎</a></h3>
 <p>定义 <span class="arithmatex">\(f(p^c) = p \oplus c\)</span>。</p>
 <p>因此 <span class="arithmatex">\(g(p) = f(p) = p - 1 + 2 [p = 2]\)</span>。与筛 <span class="arithmatex">\(\varphi\)</span> 操作一样，最后加上 <span class="arithmatex">\(2\)</span> 即可。</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -1435,7 +1434,7 @@ G_k(n) = G_{k - 1}(n) - g(p_k) \left( G_{k - 1} \left( \left\lfloor \frac{n}{p_k
 <span class="normal">45</span>
 <span class="normal">46</span>
 <span class="normal">47</span>
-<span class="normal">48</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">const</span><span class="w"> </span><span class="n">ll</span><span class="w"> </span><span class="n">mod</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1000000007</span><span class="p">,</span><span class="w"> </span><span class="n">inv2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">500000004</span><span class="p">;</span><span class="w"></span>
+<span class="normal">48</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">const</span><span class="w"> </span><span class="n">ll</span><span class="w"> </span><span class="n">mod</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1000000007</span><span class="p">,</span><span class="w"> </span><span class="n">inv2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">500000004</span><span class="p">;</span><span class="w"></span>
 <span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">maxn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">200005</span><span class="p">;</span><span class="w"></span>
 <span class="n">ll</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">prime</span><span class="p">[</span><span class="n">maxn</span><span class="p">],</span><span class="w"> </span><span class="n">cnt</span><span class="p">,</span><span class="w"> </span><span class="n">w</span><span class="p">[</span><span class="n">maxn</span><span class="p">],</span><span class="w"> </span><span class="n">s</span><span class="p">[</span><span class="n">maxn</span><span class="p">],</span><span class="w"> </span><span class="n">c</span><span class="p">[</span><span class="n">maxn</span><span class="p">];</span><span class="w"></span>
 <span class="n">ll</span><span class="w"> </span><span class="n">sqrt_n</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">;</span><span class="w"></span>
@@ -1483,8 +1482,7 @@ G_k(n) = G_{k - 1}(n) - g(p_k) \left( G_{k - 1} \left( \left\lfloor \frac{n}{p_k
 <span class="w">        </span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mo</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
 <span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%lld&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">F</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <h3 id="p4213-杜教筛">P4213 杜教筛<a class="headerlink" href="#p4213-杜教筛" title="Permanent link">⚓︎</a></h3>
 <p>求 Euler <span class="arithmatex">\(\varphi\)</span> 函数的前缀和，有 <span class="arithmatex">\(\varphi (p^k) = p^k - p^{k - 1}\)</span>。</p>
 <p>令 <span class="arithmatex">\(g(p) = p\)</span>，那么 <span class="arithmatex">\(G_0(n) = \dfrac{1}{2} n (n + 1) - 1\)</span>。令 <span class="arithmatex">\(g(p) = 1\)</span>，那么 <span class="arithmatex">\(G_0(n) = n - 1\)</span>。</p>
@@ -1633,7 +1631,7 @@ h(t,l) = h(t-1,l) + f(p_t)
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright 2020 - 2021 ZAFU ACM Team
+      Copyright 2020 - 2022 ZAFU ACM Team
     </div>
   
   
@@ -1678,7 +1676,7 @@ h(t,l) = h(t-1,l) + f(p_t)
       
         <script src="../../_static/config.js"></script>
       
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
+        <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/mathjax/3.2.0/es5/tex-svg.min.js"></script>
       
     
   </body>

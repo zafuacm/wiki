@@ -1125,7 +1125,7 @@
 </ol>
 <p>正确性可能不是那么显然。</p>
 <p>注意到第 2 步结束时，对于选中的元素来说，左边一定是比它小的，右边一定是比它大的。排序后左边的元素一定不会溜到右边去，右边也不会来左边。这种看起来没什么用的有序性，足以完成全部的排序。</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -1145,7 +1145,7 @@
 <span class="normal">18</span>
 <span class="normal">19</span>
 <span class="normal">20</span>
-<span class="normal">21</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">nn</span><span class="p">[</span><span class="n">MAXN</span><span class="p">];</span><span class="w"></span>
+<span class="normal">21</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">nn</span><span class="p">[</span><span class="n">MAXN</span><span class="p">];</span><span class="w"></span>
 
 <span class="kt">void</span><span class="w"> </span><span class="nf">quick_sort</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">r</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">l</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">r</span><span class="p">)</span><span class="w"></span>
@@ -1166,8 +1166,7 @@
 <span class="w">    </span><span class="n">quick_sort</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">j</span><span class="p">);</span><span class="w"></span>
 <span class="w">    </span><span class="n">quick_sort</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">r</span><span class="p">);</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>更多的排序方法，例如希尔排序、归并排序、桶排序、堆排序等，这里就不讲了，一般快排够用了。想了解的可以去 <a href="https://oi-wiki.org/basic/sort-intro/">排序 - OI Wiki</a> 看看。</p>
 <h2 id="应用">应用<a class="headerlink" href="#应用" title="Permanent link">⚓︎</a></h2>
 <p>检查数列相等元素：排序后，判断相邻元素是否相等。</p>
@@ -1256,7 +1255,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright 2020 - 2021 ZAFU ACM Team
+      Copyright 2020 - 2022 ZAFU ACM Team
     </div>
   
   
@@ -1301,7 +1300,7 @@
       
         <script src="../../_static/config.js"></script>
       
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
+        <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/mathjax/3.2.0/es5/tex-svg.min.js"></script>
       
     
   </body>
