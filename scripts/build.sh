@@ -10,7 +10,7 @@ chmod +x $HOME/bin/mdbook
 chmod +x $HOME/bin/mdbook-admonish
 chmod +x $HOME/bin/preprocessor-md-tex
 
-export PATH="$HOME/bin:$PATH$
+export PATH="$HOME/bin:$PATH"
 
 preprocessor-md-tex ./docs/
 mdbook build
