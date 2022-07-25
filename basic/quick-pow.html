@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>基础 - ZAFU ACM Wiki</title>
+        <title>快速幂 - ZAFU ACM Wiki</title>
         <!-- Custom HTML head -->
 <style>
 main p > code {
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 介绍</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../about/support.html"><strong aria-hidden="true">1.1.</strong> 如何参与</a></li></ol></li><li class="chapter-item expanded "><a href="../basic/index.html" class="active"><strong aria-hidden="true">2.</strong> 基础</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../basic/basic.html"><strong aria-hidden="true">2.1.</strong> 算法思想</a></li><li class="chapter-item "><a href="../basic/example.html"><strong aria-hidden="true">2.2.</strong> 优化例题</a></li><li class="chapter-item "><a href="../basic/divide.html"><strong aria-hidden="true">2.3.</strong> 递归</a></li><li class="chapter-item "><a href="../basic/binary.html"><strong aria-hidden="true">2.4.</strong> 二分</a></li><li class="chapter-item "><a href="../basic/greedy.html"><strong aria-hidden="true">2.5.</strong> 贪心</a></li><li class="chapter-item "><a href="../basic/sort.html"><strong aria-hidden="true">2.6.</strong> 排序</a></li><li class="chapter-item "><a href="../basic/recursion.html"><strong aria-hidden="true">2.7.</strong> 递推初步</a></li><li class="chapter-item "><a href="../basic/dp.html"><strong aria-hidden="true">2.8.</strong> 动态规划</a></li><li class="chapter-item "><a href="../basic/prefix-sum.html"><strong aria-hidden="true">2.9.</strong> 前缀和 & 差分</a></li><li class="chapter-item "><a href="../basic/quick-pow.html"><strong aria-hidden="true">2.10.</strong> 快速幂</a></li><li class="chapter-item "><a href="../basic/end.html"><strong aria-hidden="true">2.11.</strong> 结语</a></li></ol></li><li class="chapter-item expanded "><a href="../math/index.html"><strong aria-hidden="true">3.</strong> 数学</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../math/sieve.html"><strong aria-hidden="true">3.1.</strong> 筛法</a></li><li class="chapter-item "><a href="../math/crt.html"><strong aria-hidden="true">3.2.</strong> 中国剩余定理</a></li><li class="chapter-item "><a href="../math/game-theory.html"><strong aria-hidden="true">3.3.</strong> 基础博弈</a></li><li class="chapter-item "><a href="../math/dirichlet.html"><strong aria-hidden="true">3.4.</strong> Dirichlet 卷积</a></li><li class="chapter-item "><a href="../math/multiplicative-function.html"><strong aria-hidden="true">3.5.</strong> 积性函数</a></li><li class="chapter-item "><a href="../math/poly/index.html"><strong aria-hidden="true">3.6.</strong> 多项式</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../math/poly/convolution.html"><strong aria-hidden="true">3.6.1.</strong> 卷积</a></li><li class="chapter-item "><a href="../math/poly/fft.html"><strong aria-hidden="true">3.6.2.</strong> FFT</a></li><li class="chapter-item "><a href="../math/poly/newton.html"><strong aria-hidden="true">3.6.3.</strong> 牛顿迭代</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../struct/index.html"><strong aria-hidden="true">4.</strong> 数据结构</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../struct/fenwick-tree.html"><strong aria-hidden="true">4.1.</strong> 数据结构</a></li><li class="chapter-item "><a href="../struct/sparse-table.html"><strong aria-hidden="true">4.2.</strong> ST 表</a></li></ol></li><li class="chapter-item expanded "><a href="../string/index.html"><strong aria-hidden="true">5.</strong> 字符串</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../string/minimal-string.html"><strong aria-hidden="true">5.1.</strong> 最小表示法</a></li></ol></li><li class="chapter-item expanded "><a href="../other/index.html"><strong aria-hidden="true">6.</strong> 附录</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../other/markdown.html"><strong aria-hidden="true">6.1.</strong> Markdown 简介</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 介绍</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../about/support.html"><strong aria-hidden="true">1.1.</strong> 如何参与</a></li></ol></li><li class="chapter-item expanded "><a href="../basic/index.html"><strong aria-hidden="true">2.</strong> 基础</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../basic/basic.html"><strong aria-hidden="true">2.1.</strong> 算法思想</a></li><li class="chapter-item "><a href="../basic/example.html"><strong aria-hidden="true">2.2.</strong> 优化例题</a></li><li class="chapter-item "><a href="../basic/divide.html"><strong aria-hidden="true">2.3.</strong> 递归</a></li><li class="chapter-item "><a href="../basic/binary.html"><strong aria-hidden="true">2.4.</strong> 二分</a></li><li class="chapter-item "><a href="../basic/greedy.html"><strong aria-hidden="true">2.5.</strong> 贪心</a></li><li class="chapter-item "><a href="../basic/sort.html"><strong aria-hidden="true">2.6.</strong> 排序</a></li><li class="chapter-item "><a href="../basic/recursion.html"><strong aria-hidden="true">2.7.</strong> 递推初步</a></li><li class="chapter-item "><a href="../basic/dp.html"><strong aria-hidden="true">2.8.</strong> 动态规划</a></li><li class="chapter-item "><a href="../basic/prefix-sum.html"><strong aria-hidden="true">2.9.</strong> 前缀和 & 差分</a></li><li class="chapter-item expanded "><a href="../basic/quick-pow.html" class="active"><strong aria-hidden="true">2.10.</strong> 快速幂</a></li><li class="chapter-item "><a href="../basic/end.html"><strong aria-hidden="true">2.11.</strong> 结语</a></li></ol></li><li class="chapter-item expanded "><a href="../math/index.html"><strong aria-hidden="true">3.</strong> 数学</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../math/sieve.html"><strong aria-hidden="true">3.1.</strong> 筛法</a></li><li class="chapter-item "><a href="../math/crt.html"><strong aria-hidden="true">3.2.</strong> 中国剩余定理</a></li><li class="chapter-item "><a href="../math/game-theory.html"><strong aria-hidden="true">3.3.</strong> 基础博弈</a></li><li class="chapter-item "><a href="../math/dirichlet.html"><strong aria-hidden="true">3.4.</strong> Dirichlet 卷积</a></li><li class="chapter-item "><a href="../math/multiplicative-function.html"><strong aria-hidden="true">3.5.</strong> 积性函数</a></li><li class="chapter-item "><a href="../math/poly/index.html"><strong aria-hidden="true">3.6.</strong> 多项式</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../math/poly/convolution.html"><strong aria-hidden="true">3.6.1.</strong> 卷积</a></li><li class="chapter-item "><a href="../math/poly/fft.html"><strong aria-hidden="true">3.6.2.</strong> FFT</a></li><li class="chapter-item "><a href="../math/poly/newton.html"><strong aria-hidden="true">3.6.3.</strong> 牛顿迭代</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../struct/index.html"><strong aria-hidden="true">4.</strong> 数据结构</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../struct/fenwick-tree.html"><strong aria-hidden="true">4.1.</strong> 数据结构</a></li><li class="chapter-item "><a href="../struct/sparse-table.html"><strong aria-hidden="true">4.2.</strong> ST 表</a></li></ol></li><li class="chapter-item expanded "><a href="../string/index.html"><strong aria-hidden="true">5.</strong> 字符串</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../string/minimal-string.html"><strong aria-hidden="true">5.1.</strong> 最小表示法</a></li></ol></li><li class="chapter-item expanded "><a href="../other/index.html"><strong aria-hidden="true">6.</strong> 附录</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../other/markdown.html"><strong aria-hidden="true">6.1.</strong> Markdown 简介</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <a href="https://github.com/zafuacm/wiki/" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        <a href="https://github.com/zafuacm/wiki/edit/main/docs/basic/index.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <a href="https://github.com/zafuacm/wiki/edit/main/docs/basic/quick-pow.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
                     </div>
@@ -191,27 +191,127 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="简介"><a class="header" href="#简介">简介</a></h1>
-<p>一些名词的意义是自明的，比如模拟、搜索等，这些词就不再详加解释了。</p>
-<h2 id="序"><a class="header" href="#序">序</a></h2>
-<p>语言只是工具，如果没有好的算法，也无法解决问题。这里会介绍一些基本的算法知识。</p>
-<p>我挑选了一点题目，在每页的最下面。全部见 <a href="https://www.luogu.com.cn/training/70190">题目列表汇总</a>。</p>
-<p>部分内容来自于 <a href="https://oi-wiki.org/">OI-Wiki</a>，那里也有许多算法的介绍，感兴趣的可以看看。</p>
-<h2 id="试机题"><a class="header" href="#试机题">试机题</a></h2>
+                        <h1 id="快速幂"><a class="header" href="#快速幂">快速幂</a></h1>
+<p>假如我们想要得到 $3^{100} \bmod 10007$，你会怎么做？</p>
+<p>你可能会写出这样的代码</p>
+<pre><code class="language-cpp">const int mod = 10007;
+int ans = 1;
+for (int i = 0; i &lt; 100; i++)
+    ans = ans * 3 % mod;
+return ans;
+</code></pre>
+<p>假如要计算的是 $a^n \bmod p$，那么这种写法的时间复杂度是 $O(n)$。尽管 $O(n)$ 听起来已经很不错，但是，我们可以做到更快。</p>
+<h2 id="平方法"><a class="header" href="#平方法">平方法</a></h2>
+<p>假设初始为 $a$，自乘后得到 $a^2$，再对结果自乘得到 $a^4$，反复下去，我们可以得到一列数</p>
+<p>$$
+a \to a^2 \to a^{4} \to a^{8} \to a^{16} \to a^{32} \to a^{64} \to \cdots
+$$</p>
+<p>容易发现，它的指数的增长速度是 $2^k$，比线性增长的速度快的多。</p>
+<p>我们可以尝试利用“平方法”加速幂的运算。</p>
+<h2 id="递归方法"><a class="header" href="#递归方法">递归方法</a></h2>
+<p>很自然的想到</p>
+<p>$$
+a^n = \begin{cases}
+a^{n-1} \times a, &amp;n \bmod 2 = 1\\
+a^{\frac{n}{2}} \times a^{\frac{n}{2}}, &amp;n \bmod 2 = 0
+\end{cases}
+$$</p>
+<p>可以据此实现代码</p>
+<pre><code class="language-cpp">const int mod = 10007;
+int qpow(int a, int n) {
+    if(n == 0) {
+        return 1;
+    } else if(n % 2 == 1) {
+        return qpow(a, n - 1) * a % mod;
+    } else {
+        int t = qpow(a, n / 2);
+        return t * t % mod;
+    }
+}
+</code></pre>
+<div id="admonition-思考" class="admonition info">
+<div class="admonition-title">
+<p>思考</p>
+<p><a class="admonition-anchor-link" href="#admonition-思考"></a></p>
+</div>
+<div>
+<p>为什么不写 <code>qpow(a, n / 2) * qpow(a, n / 2)</code>，而用 <code>t</code> 进行存储？</p>
+</div>
+</div>
+<p>递归本身也具有一定的开销，我们可以稍加思考，改进得到非递归法。</p>
+<h2 id="非递归法"><a class="header" href="#非递归法">非递归法</a></h2>
+<p>还是讨论 $a^{100}$，我们可以把它拆分成“平方法”数列中的项的乘积</p>
+<p>$$
+a^{100} = a^{64} \times a^{32} \times a^4
+$$</p>
+<p>那么对于任意的 $n$，如何拆分 $a^n$ 才可以利用平方法加速呢？</p>
+<p>注意到平方法数列中的指数都是 $2$ 的幂，即把 $n$ 分解为 $2$ 的幂的和，于是很自然的想到 $n$ 的二进制表示。</p>
+<p>因为 $100_{10} = 1100100_2$，于是有</p>
+<p>$$
+\begin{matrix} 
+&amp; a^1 &amp; a^2 &amp; a^4 &amp; a^8 &amp; a^{16} &amp; a^{32} &amp; a^{64} \\
+100 &amp; &amp; &amp; 4 &amp; &amp; &amp; 32 &amp; 64\\
+100 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 1 
+\end{matrix}
+$$</p>
+<p>即二进制下该位为 $1$，则计算该位的贡献；若该位为 $0$，则不计算该位的贡献。</p>
+<p>于是可以写出代码</p>
+<pre><code class="language-cpp">const int mod = 10007;
+int qpow(int a, int n) {
+    int ans = 1;
+    while(n &gt; 0) {
+        if(n % 2 == 1)
+            ans = ans * a % mod;
+        a = a * a % mod;
+        n = n / 2;
+    }
+    return ans;
+}
+</code></pre>
+<p>在实际使用时往往写成这样</p>
+<pre><code class="language-cpp">ll qpow(ll a, ll b, ll p) {
+    ll ret = p != 1;
+    for(; b; b &gt;&gt;= 1) {
+        if(b &amp; 1)
+            ret = a * ret % p;
+        a = a * a % p;
+    }
+    return ret;
+}
+</code></pre>
+<h2 id="应用"><a class="header" href="#应用">应用</a></h2>
+<p>快速幂只是一个小技巧，但是应用的范围很广泛。</p>
+<h3 id="数列递推"><a class="header" href="#数列递推">数列递推</a></h3>
+<p>拿我们熟悉的 Fibonacci 数列举例</p>
+<p>$$
+F_{n+2} = F_{n+1} + F_{n}
+$$ </p>
+<p>可以写成矩阵乘法形式</p>
+<p>$$
+\left(\begin{matrix}F_{n+1}\\F_{n+2}\end{matrix}\right)
+= \left(\begin{matrix}0 &amp; 1\\1 &amp; 1\end{matrix}\right)
+\left(\begin{matrix}F_{n}\\F_{n+1}\end{matrix}\right)
+$$</p>
+<p>设 $P = \left(\begin{matrix}0 &amp; 1\\1 &amp; 1\end{matrix}\right)$ ，于是有</p>
+<p>$$
+\left(\begin{matrix}F_{n+1}\\F_{n+2}\end{matrix}\right)
+= P^n\left(\begin{matrix}F_{1}\\F_{2}\end{matrix}\right)
+$$</p>
+<p>可以对矩阵使用快速幂，那么计算第 $n$ 项只需 $O(\log n)$。</p>
+<h2 id="例题"><a class="header" href="#例题">例题</a></h2>
 <ul>
-<li><a href="https://www.luogu.com.cn/problem/P1001">P1001 A+B Problem</a></li>
-<li><a href="https://www.luogu.com.cn/problem/P1047">P1047 校门外的树</a></li>
-<li><a href="https://www.luogu.com.cn/problem/P2181">P2181 对角线</a></li>
+<li><a href="https://www.luogu.com.cn/problem/P1226">P1226 【模板】快速幂</a></li>
+<li><a href="https://www.luogu.com.cn/problem/P1962">P1962 斐波那契数列</a></li>
 </ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../about/support.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../basic/prefix-sum.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                            <a rel="next" href="../basic/basic.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../basic/end.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         <div style="clear: both"></div>
@@ -220,10 +320,10 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../about/support.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../basic/prefix-sum.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                    <a rel="next" href="../basic/basic.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../basic/end.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

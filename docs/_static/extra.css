@@ -1,0 +1,36 @@
+/* MathJax 公式显示异常 */
+
+.md-typeset img, .md-typeset svg {
+    max-width: none;
+}
+
+.md-typeset div.arithmatex {
+    overflow-y: hidden;
+}
+
+.md-typeset blockquote {
+    padding: .1em 20px;
+    color: #000000;
+    background-color: #f5f5f5;
+}
+
+/* mdbook */
+
+
+.content p > code {
+    color: #f14668;
+    background: none;
+}
+
+.content pre > code {
+    padding: 10px !important;
+}
+
+.content p a, .content ul a {
+    color: #0088cc !important;
+}
+
+.katex-display {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
