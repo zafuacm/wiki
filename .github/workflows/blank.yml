@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 0
 
       - name: Build with mdBook
-        run: scripts/build.sh
+        run: bash scripts/build.sh
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
