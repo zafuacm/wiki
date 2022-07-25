@@ -65,7 +65,7 @@ plugins:
       count_empty_lines: true
       fallback_to_empty: false
 
-copyright: Copyright 2020 - 2021 ZAFU ACM Team
+copyright: Copyright 2020 - 2022 ZAFU ACM Team
 repo_url: https://github.com/zafuacm/wiki
 repo_name: zafuacm/wiki
 edit_uri: edit/main/docs/
@@ -80,7 +80,7 @@ extra:
 
 extra_javascript:
   - _static/config.js
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js
+  - https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/mathjax/3.2.0/es5/tex-svg.min.js
 
 extra_css:
   - _static/extra.css
