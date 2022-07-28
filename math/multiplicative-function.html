@@ -247,17 +247,17 @@ $$</p>
 <p>$$
 F(n, k) = \sum_{p_k &lt; p_i \leqslant \sqrt{n}} \sum_{p_i^{c + 1} \leqslant n} \left(f(p_i^c) g \left( \left\lfloor \frac{n}{p_i^c} \right\rfloor, i \right) + f(p_i^{c + 1}) \right) + h(n) - h (p_i)
 $$</p>
-<p>如上所述，我们可以写出递归代码。取模有时可以用 <code>int128</code> 优化。</p>
-<pre><code class="language-cpp">ll F(ll n, int k) {
-    if(n &lt;= prime[k])
+<p>如上所述，我们可以写出递归代码。</p>
+<pre><code class="language-cpp">Z F(ll u, int k) {
+    if (u &lt;= primes[k])
         return 0;
-    ll ret = s[id(n)] - s[prime[k]];
-    for (int i = k + 1; i &lt;= cnt &amp;&amp; prime[i] * prime[i] &lt;= n; i++) {
-        ll pi = prime[i], pk = pi;
-        for (int c = 1; pk * pi &lt;= n; c++, pk *= pi)
-            ret += f_p(pi, c) * F(n / pk, i) + f_p(pi, c + 1);
+    Z ret = sum[id(u)] - sum[primes[k]];
+    for (int i = k + 1; i &lt; primes.size() &amp;&amp; 1ll * primes[i] * primes[i] &lt;= u; i++) {
+        ll pi = primes[i], pc = pi;
+        for (int c = 1; pc * pi &lt;= u; c++, pc *= pi)
+            ret += fp(pi, c) * F(u / pc, i) + fp(pi, c + 1);
     }
-    return mo(ret);
+    return ret;
 }
 </code></pre>
 <h3 id="part-2"><a class="header" href="#part-2">Part 2</a></h3>
@@ -280,68 +280,291 @@ $$</p>
 G_k(n) = G_{k - 1}(n) - g(p_k) \left( G_{k - 1} \left( \left\lfloor \frac{n}{p_k} \right\rfloor \right) - G_{i - 1} (p_k - 1) \right)
 $$</p>
 <p>至此，我们完成了朴素 Min_25 筛的全部推导。</p>
-<h3 id="loj-6053-简单的函数"><a class="header" href="#loj-6053-简单的函数">LOJ 6053 简单的函数</a></h3>
-<p>定义 $f(p^c) = p \oplus c$。</p>
-<p>因此 $g(p) = f(p) = p - 1 + 2 [p = 2]$。与筛 $\varphi$ 操作一样，最后加上 $2$ 即可。</p>
-<pre><code class="language-cpp">const ll mod = 1000000007, inv2 = 500000004;
-const int maxn = 200005;
-ll n, prime[maxn], cnt, w[maxn], s[maxn], c[maxn];
-ll sqrt_n, m;
-
-ll f_p(ll p, ll e) {
-    return p ^ e;
-}
-
-int id(ll x) {
-    return x &lt;= sqrt_n ? x : m - (n / x) + 1;
-}
-
-ll F(ll n, int k) {
-    if(n &lt;= prime[k])
-        return 0;
-    ll ret = s[id(n)] - s[prime[k]];
-    for (int i = k + 1; i &lt;= cnt &amp;&amp; prime[i] * prime[i] &lt;= n; i++) {
-        ll pi = prime[i], pk = pi;
-        for (int c = 1; pk * pi &lt;= n; c++, pk *= pi)
-            ret += f_p(pi, c) * F(n / pk, i) + f_p(pi, c + 1);
+<h3 id="例题"><a class="header" href="#例题">例题</a></h3>
+<div id="admonition-loj6053-简单的函数httpslojacp6053" class="admonition note">
+<div class="admonition-title">
+<p><a href="https://loj.ac/p/6053">LOJ6053 简单的函数</a></p>
+<p><a class="admonition-anchor-link" href="#admonition-loj6053-简单的函数httpslojacp6053"></a></p>
+</div>
+<div>
+<p>给定一个积性函数 $f(x)$，其中：</p>
+<ol>
+<li>$f(p^c) = p \oplus c$。</li>
+<li>$f(1) = 1$。</li>
+</ol>
+<p>求其前缀和。</p>
+</div>
+</div>
+<p>因为 $f(p) = p - 1 + 2 [p = 2]$，拆分成 $p$ 和 $-1$ 即可，注意最后需要加 $2$。</p>
+<details id="admonition-参考代码" class="admonition info">
+<summary class="admonition-title">
+<p>参考代码</p>
+<p><a class="admonition-anchor-link" href="#admonition-参考代码"></a></p>
+</summary>
+<div>
+<pre><code class="language-cpp">struct Min25 {
+    ll n, sn, m = 0;
+    vector&lt;int&gt; primes;
+    vector&lt;Z&gt; sum;
+    Z fp(int p, int k) {
+        return p ^ k;
     }
-    return mo(ret + mod) % mod;
-}
-
-int main() {
-    n = rr();
-    sqrt_n = sqrt(n + 0.01);
-    m = cnt = 0;
-    for (ll l = 1, r; l &lt;= n; l = r + 1) {
-        w[++m] = r = n / (n / l);
-        ll mr = r % mod;
-        s[m] = mr * (mr + 1) / 2 - 1;
-        c[m] = mr - 1;
+    int id(ll x) {
+        return x &lt;= sn ? x : m - (n / x) + 1;
     }
-    for (ll p = 2; p &lt;= sqrt_n; p++) {
-        if(c[p] != c[p - 1]) {
-            prime[++cnt] = p;
-            for (ll j = m; w[j] &gt;= p * p; j--) {
-                s[j] -= p * (s[id(w[j] / p)] - s[p - 1]);
-                c[j] -= c[id(w[j] / p)] - c[p - 1];
+    Min25(ll u) : n(u), sn(sqrt(n) + 1), sum(sn * 2 + 5) {
+        vector&lt;bool&gt; not_p(sn + 1);
+        vector&lt;ll&gt; w(sn * 2 + 5);
+        for (ll l = 1, r; l &lt;= n; l = r + 1) {
+            w[++m] = r = n / (n / l);
+        }
+        vector&lt;Z&gt; s0(m + 1), s1(m + 1);
+        for (int i = 1; i &lt;= m; i++) {
+            Z r = w[i] % P;
+            s0[i] = r - 1;
+            s1[i] = r * (r + 1) / 2 - 1;
+        }
+        primes.push_back(0);
+        for (int i = 2; i &lt;= sn; i++) {
+            if (not not_p[i]) {
+                primes.push_back(i);
+                for (int j = i; j &lt;= (sn - 1) / i; j++)
+                    not_p[i * j] = true;
+                for (int j = m; w[j] &gt;= 1ll * i * i; j--) {
+                    s1[j] -= i * (s1[id(w[j] / i)] - s1[i - 1]);
+                    s0[j] -= s0[id(w[j] / i)] - s0[i - 1];
+                }
             }
         }
+        for (int i = 2; i &lt;= m; i++) {
+            sum[i] = s1[i] - s0[i] + 2;
+        }
     }
-    for (int i = 2; i &lt;= m; i++)
-        s[i] = mo(s[i] - c[i] + 2);
-    printf(&quot;%lld&quot;, F(n, 0) + 1);
-}
+    Z eval() {
+        return F(n, 0) + 1;
+    }
+    Z F(ll u, int k) {
+        if (u &lt;= primes[k])
+            return 0;
+        Z ret = sum[id(u)] - sum[primes[k]];
+        for (int i = k + 1; i &lt; primes.size() &amp;&amp; 1ll * primes[i] * primes[i] &lt;= u; i++) {
+            ll pi = primes[i], pc = pi;
+            for (int c = 1; pc * pi &lt;= u; c++, pc *= pi)
+                ret += fp(pi, c) * F(u / pc, i) + fp(pi, c + 1);
+        }
+        return ret;
+    }
+};
 </code></pre>
-<h3 id="p4213-杜教筛"><a class="header" href="#p4213-杜教筛">P4213 杜教筛</a></h3>
-<p>求 Euler $\varphi$ 函数的前缀和，有 $\varphi (p^k) = p^k - p^{k - 1}$。</p>
-<p>令 $g(p) = p$，那么 $G_0(n) = \dfrac{1}{2} n (n + 1) - 1$。令 $g(p) = 1$，那么 $G_0(n) = n - 1$。</p>
-<p>两次计算分别累加即可。</p>
-<p>求 Mobius $\mu$ 函数的前缀和，有 $\mu (p^k) = - [k = 1]$，令 $g(p) = 1$，在筛 $\varphi(n)$ 中已经计算过所以不用再次计算。</p>
-<p>再由于当 $c &gt; 1$ 时有 $\mu (p^c) = 0$，故计算 $F$ 时可以再优化。在计算时要注意卡常，避免除法，最后一个点对时间的要求比较紧。</p>
-<h3 id="p5325-min25-筛"><a class="header" href="#p5325-min25-筛">P5325 Min25 筛</a></h3>
-<p>定义 $f(p^c) = p^c (p^c - 1)$。</p>
-<p>令 $g(p) = p^2$，得 $G_0(n) = \dfrac{1}{6} n (n + 1) (2 n + 1) - 1$。令 $g(p) = p$，得 $G_0(n) = \dfrac{1}{2} n (n + 1) - 1$。</p>
-<p>取模的细节有亿点多，大家小心。</p>
+</div>
+</details>
+<div id="admonition-p5325-min25-筛httpswwwluogucomcnproblemp5325" class="admonition note">
+<div class="admonition-title">
+<p><a href="https://www.luogu.com.cn/problem/P5325">P5325 Min25 筛</a></p>
+<p><a class="admonition-anchor-link" href="#admonition-p5325-min25-筛httpswwwluogucomcnproblemp5325"></a></p>
+</div>
+<div>
+<p>给定一个积性函数 $f(x)$，其中：</p>
+<ol>
+<li>$f(p^c) = p^c(p^c - 1)$。</li>
+<li>$f(1) = 1$。</li>
+</ol>
+<p>求其前缀和，答案对 $10^9+7$ 取模。</p>
+</div>
+</div>
+<p>注意到 $f(p) = p^2 - p$，拆分成 $p^2$ 和 $p$ 即可。</p>
+<details id="admonition-参考代码-1" class="admonition info">
+<summary class="admonition-title">
+<p>参考代码</p>
+<p><a class="admonition-anchor-link" href="#admonition-参考代码-1"></a></p>
+</summary>
+<div>
+<pre><code class="language-cpp">struct Min25 {
+    ll n, sn, m = 0;
+    vector&lt;int&gt; primes;
+    vector&lt;Z&gt; sum;
+    Z fp(int p, int k) {
+        Z pk = Z(p).pow(k);
+        return pk * (pk - 1);
+    }
+    int id(ll x) {
+        return x &lt;= sn ? x : m - (n / x) + 1;
+    }
+    Min25(ll u) : n(u), sn(sqrt(n) + 1), sum(sn * 2 + 5) {
+        vector&lt;bool&gt; not_p(sn + 1);
+        vector&lt;ll&gt; w(sn * 2 + 5);
+        for (ll l = 1, r; l &lt;= n; l = r + 1) {
+            w[++m] = r = n / (n / l);
+        }
+        vector&lt;Z&gt; s2(m + 1), s1(m + 1);
+        for (int i = 1; i &lt;= m; i++) {
+            Z r = w[i] % P;
+            s1[i] = r * (r + 1) / 2 - 1;
+            s2[i] = r * (r + 1) * (2 * r + 1) / 6 - 1;
+        }
+        primes.push_back(0);
+        for (int i = 2; i &lt;= sn; i++) {
+            if (not not_p[i]) {
+                primes.push_back(i);
+                for (int j = i; j &lt;= (sn - 1) / i; j++)
+                    not_p[i * j] = true;
+                for (int j = m; w[j] &gt;= 1ll * i * i; j--) {
+                    s1[j] -= i * (s1[id(w[j] / i)] - s1[i - 1]);
+                    s2[j] -= Z(i) * i * (s2[id(w[j] / i)] - s2[i - 1]);
+                }
+            }
+        }
+        for (int i = 2; i &lt;= m; i++) {
+            sum[i] = s2[i] - s1[i];
+        }
+    }
+    Z eval() {
+        return F(n, 0) + 1;
+    }
+    Z F(ll u, int k) {
+        if (u &lt;= primes[k])
+            return 0;
+        Z ret = sum[id(u)] - sum[primes[k]];
+        for (int i = k + 1; i &lt; primes.size() &amp;&amp; 1ll * primes[i] * primes[i] &lt;= u; i++) {
+            ll pi = primes[i], pc = pi;
+            for (int c = 1; pc * pi &lt;= u; c++, pc *= pi)
+                ret += fp(pi, c) * F(u / pc, i) + fp(pi, c + 1);
+        }
+        return ret;
+    }
+};
+</code></pre>
+</div>
+</details>
+<div id="admonition-p4213-杜教筛httpswwwluogucomcnproblemp4213" class="admonition note">
+<div class="admonition-title">
+<p><a href="https://www.luogu.com.cn/problem/P4213">P4213 杜教筛</a></p>
+<p><a class="admonition-anchor-link" href="#admonition-p4213-杜教筛httpswwwluogucomcnproblemp4213"></a></p>
+</div>
+<div>
+<p>求积性函数 $\varphi(x)$ 和 $\mu(x)$ 的前缀和</p>
+<ol>
+<li>$\varphi(p^c) = p^c - p^{c-1}$。</li>
+<li>$\mu(p^c) = -[c=1]$。</li>
+</ol>
+</div>
+</div>
+<p>因为 $\varphi(p) = p - 1$，和 $\mu(p) = -1$，处理上大同小异。</p>
+<details id="admonition-参考代码-2" class="admonition info">
+<summary class="admonition-title">
+<p>参考代码</p>
+<p><a class="admonition-anchor-link" href="#admonition-参考代码-2"></a></p>
+</summary>
+<div>
+<pre><code class="language-cpp">struct Min25_phi {
+    ll n, sn, m = 0;
+    vector&lt;int&gt; primes;
+    vector&lt;Z&gt; sum;
+    Z fp(int p, int k) {
+        return qpow(p, k - 1) * (p - 1);
+    }
+    int id(ll x) {
+        return x &lt;= sn ? x : m - (n / x) + 1;
+    }
+    Min25_phi(ll u) : n(u), sn(sqrt(n) + 1), sum(sn * 2 + 5) {
+        vector&lt;bool&gt; not_p(sn + 1);
+        vector&lt;ll&gt; w(sn * 2 + 5);
+        for (ll l = 1, r; l &lt;= n; l = r + 1) {
+            w[++m] = r = n / (n / l);
+        }
+        vector&lt;Z&gt; s0(m + 1), s1(m + 1);
+        for (int i = 1; i &lt;= m; i++) {
+            Z r = w[i];
+            s0[i] = r - 1;
+            s1[i] = r * (r + 1) / 2 - 1;
+        }
+        primes.push_back(0);
+        for (int i = 2; i &lt;= sn; i++) {
+            if (not not_p[i]) {
+                primes.push_back(i);
+                for (int j = i; j &lt;= (sn - 1) / i; j++)
+                    not_p[i * j] = true;
+                for (int j = m; w[j] &gt;= 1ll * i * i; j--) {
+                    s1[j] -= i * (s1[id(w[j] / i)] - s1[i - 1]);
+                    s0[j] -= s0[id(w[j] / i)] - s0[i - 1];
+                }
+            }
+        }
+        for (int i = 2; i &lt;= m; i++) {
+            sum[i] = s1[i] - s0[i];
+        }
+    }
+    Z eval() {
+        return F(n, 0) + 1;
+    }
+    Z F(ll u, int k) {
+        if (u &lt;= primes[k])
+            return 0;
+        Z ret = sum[id(u)] - sum[primes[k]];
+        for (int i = k + 1; i &lt; primes.size() &amp;&amp; 1ll * primes[i] * primes[i] &lt;= u; i++) {
+            ll pi = primes[i], pc = pi;
+            for (int c = 1; pc * pi &lt;= u; c++, pc *= pi) {
+                ret += fp(pi, c) * F(u / pc, i) + fp(pi, c + 1);
+            }
+        }
+        return ret;
+    }
+};
+
+struct Min25_mu {
+    ll n, sn, m = 0;
+    vector&lt;int&gt; primes;
+    vector&lt;Z&gt; sum;
+    Z fp(int p, int k) {
+        return -(k == 1);
+    }
+    int id(ll x) {
+        return x &lt;= sn ? x : m - (n / x) + 1;
+    }
+    Min25_mu(ll u) : n(u), sn(sqrt(n) + 1), sum(sn * 2 + 5) {
+        vector&lt;bool&gt; not_p(sn + 1);
+        vector&lt;ll&gt; w(sn * 2 + 5);
+        for (ll l = 1, r; l &lt;= n; l = r + 1) {
+            w[++m] = r = n / (n / l);
+        }
+        vector&lt;Z&gt; s0(m + 1);
+        for (int i = 1; i &lt;= m; i++) {
+            Z r = w[i];
+            s0[i] = r - 1;
+        }
+        primes.push_back(0);
+        for (int i = 2; i &lt;= sn; i++) {
+            if (not not_p[i]) {
+                primes.push_back(i);
+                for (int j = i; j &lt;= (sn - 1) / i; j++)
+                    not_p[i * j] = true;
+                for (int j = m; w[j] &gt;= 1ll * i * i; j--) {
+                    s0[j] -= s0[id(w[j] / i)] - s0[i - 1];
+                }
+            }
+        }
+        for (int i = 2; i &lt;= m; i++) {
+            sum[i] = -s0[i];
+        }
+    }
+    Z eval() {
+        return F(n, 0) + 1;
+    }
+    Z F(ll u, int k) {
+        if (u &lt;= primes[k])
+            return 0;
+        Z ret = sum[id(u)] - sum[primes[k]];
+        for (int i = k + 1; i &lt; primes.size() &amp;&amp; 1ll * primes[i] * primes[i] &lt;= u; i++) {
+            ll pi = primes[i], pc = pi;
+            for (int c = 1; pc * pi &lt;= u; c++, pc *= pi)
+                ret += fp(pi, c) * F(u / pc, i) + fp(pi, c + 1);
+        }
+        return ret;
+    }
+};
+</code></pre>
+</div>
+</details>
 <h2 id="pn-筛"><a class="header" href="#pn-筛">PN 筛</a></h2>
 <p>TODO</p>
 <h2 id="舟阁筛"><a class="header" href="#舟阁筛">舟阁筛</a></h2>
