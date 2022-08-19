@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>积性函数 - ZAFU ACM Wiki</title>
+        <title>Min_25 筛法 - ZAFU ACM Wiki</title>
         <!-- Custom HTML head -->
 <style>
 main p > code {
@@ -59,28 +59,28 @@ document.addEventListener("DOMContentLoaded", function () {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        <link rel="icon" href="../favicon.svg">
-        <link rel="shortcut icon" href="../favicon.png">
-        <link rel="stylesheet" href="../css/variables.css">
-        <link rel="stylesheet" href="../css/general.css">
-        <link rel="stylesheet" href="../css/chrome.css">
-        <link rel="stylesheet" href="../css/print.css" media="print">
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
         <!-- Fonts -->
-        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="../fonts/fonts.css">
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../highlight.css">
-        <link rel="stylesheet" href="../tomorrow-night.css">
-        <link rel="stylesheet" href="../ayu-highlight.css">
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        <link rel="stylesheet" href="../docs/_static/extra.css">
-        <link rel="stylesheet" href="../theme/mdbook/mdbook-admonish.css">
+        <link rel="stylesheet" href="../../docs/_static/extra.css">
+        <link rel="stylesheet" href="../../theme/mdbook/mdbook-admonish.css">
     </head>
     <body>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
-            var path_to_root = "../";
+            var path_to_root = "../../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 介绍</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../about/support.html"><strong aria-hidden="true">1.1.</strong> 如何参与</a></li></ol></li><li class="chapter-item expanded "><a href="../basic/index.html"><strong aria-hidden="true">2.</strong> 基础</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../basic/basic.html"><strong aria-hidden="true">2.1.</strong> 算法思想</a></li><li class="chapter-item "><a href="../basic/example.html"><strong aria-hidden="true">2.2.</strong> 优化例题</a></li><li class="chapter-item "><a href="../basic/divide.html"><strong aria-hidden="true">2.3.</strong> 递归</a></li><li class="chapter-item "><a href="../basic/binary.html"><strong aria-hidden="true">2.4.</strong> 二分</a></li><li class="chapter-item "><a href="../basic/greedy.html"><strong aria-hidden="true">2.5.</strong> 贪心</a></li><li class="chapter-item "><a href="../basic/sort.html"><strong aria-hidden="true">2.6.</strong> 排序</a></li><li class="chapter-item "><a href="../basic/recursion.html"><strong aria-hidden="true">2.7.</strong> 递推初步</a></li><li class="chapter-item "><a href="../basic/dp.html"><strong aria-hidden="true">2.8.</strong> 动态规划</a></li><li class="chapter-item "><a href="../basic/prefix-sum.html"><strong aria-hidden="true">2.9.</strong> 前缀和 & 差分</a></li><li class="chapter-item "><a href="../basic/quick-pow.html"><strong aria-hidden="true">2.10.</strong> 快速幂</a></li><li class="chapter-item "><a href="../basic/end.html"><strong aria-hidden="true">2.11.</strong> 结语</a></li></ol></li><li class="chapter-item expanded "><a href="../math/index.html"><strong aria-hidden="true">3.</strong> 数学</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../math/sieve.html"><strong aria-hidden="true">3.1.</strong> 筛法</a></li><li class="chapter-item "><a href="../math/crt.html"><strong aria-hidden="true">3.2.</strong> 中国剩余定理</a></li><li class="chapter-item "><a href="../math/game-theory.html"><strong aria-hidden="true">3.3.</strong> 基础博弈</a></li><li class="chapter-item "><a href="../math/dirichlet.html"><strong aria-hidden="true">3.4.</strong> Dirichlet 卷积</a></li><li class="chapter-item expanded "><a href="../math/multiplicative-function.html" class="active"><strong aria-hidden="true">3.5.</strong> 积性函数</a></li><li class="chapter-item "><a href="../math/poly/index.html"><strong aria-hidden="true">3.6.</strong> 多项式</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../math/poly/convolution.html"><strong aria-hidden="true">3.6.1.</strong> 卷积</a></li><li class="chapter-item "><a href="../math/poly/fft.html"><strong aria-hidden="true">3.6.2.</strong> FFT</a></li><li class="chapter-item "><a href="../math/poly/newton.html"><strong aria-hidden="true">3.6.3.</strong> 牛顿迭代</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../struct/index.html"><strong aria-hidden="true">4.</strong> 数据结构</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../struct/fenwick-tree.html"><strong aria-hidden="true">4.1.</strong> 数据结构</a></li><li class="chapter-item "><a href="../struct/sparse-table.html"><strong aria-hidden="true">4.2.</strong> ST 表</a></li></ol></li><li class="chapter-item expanded "><a href="../string/index.html"><strong aria-hidden="true">5.</strong> 字符串</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../string/minimal-string.html"><strong aria-hidden="true">5.1.</strong> 最小表示法</a></li></ol></li><li class="chapter-item expanded "><a href="../other/index.html"><strong aria-hidden="true">6.</strong> 附录</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../other/markdown.html"><strong aria-hidden="true">6.1.</strong> Markdown 简介</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">1.</strong> 介绍</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../about/support.html"><strong aria-hidden="true">1.1.</strong> 如何参与</a></li></ol></li><li class="chapter-item expanded "><a href="../../basic/index.html"><strong aria-hidden="true">2.</strong> 基础</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../basic/basic.html"><strong aria-hidden="true">2.1.</strong> 算法思想</a></li><li class="chapter-item "><a href="../../basic/example.html"><strong aria-hidden="true">2.2.</strong> 优化例题</a></li><li class="chapter-item "><a href="../../basic/divide.html"><strong aria-hidden="true">2.3.</strong> 递归</a></li><li class="chapter-item "><a href="../../basic/binary.html"><strong aria-hidden="true">2.4.</strong> 二分</a></li><li class="chapter-item "><a href="../../basic/greedy.html"><strong aria-hidden="true">2.5.</strong> 贪心</a></li><li class="chapter-item "><a href="../../basic/sort.html"><strong aria-hidden="true">2.6.</strong> 排序</a></li><li class="chapter-item "><a href="../../basic/recursion.html"><strong aria-hidden="true">2.7.</strong> 递推初步</a></li><li class="chapter-item "><a href="../../basic/dp.html"><strong aria-hidden="true">2.8.</strong> 动态规划</a></li><li class="chapter-item "><a href="../../basic/prefix-sum.html"><strong aria-hidden="true">2.9.</strong> 前缀和 & 差分</a></li><li class="chapter-item "><a href="../../basic/quick-pow.html"><strong aria-hidden="true">2.10.</strong> 快速幂</a></li><li class="chapter-item "><a href="../../basic/end.html"><strong aria-hidden="true">2.11.</strong> 结语</a></li></ol></li><li class="chapter-item expanded "><a href="../../math/index.html"><strong aria-hidden="true">3.</strong> 数学</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../math/sieve.html"><strong aria-hidden="true">3.1.</strong> 筛法</a></li><li class="chapter-item "><a href="../../math/crt.html"><strong aria-hidden="true">3.2.</strong> 中国剩余定理</a></li><li class="chapter-item "><a href="../../math/game-theory.html"><strong aria-hidden="true">3.3.</strong> 基础博弈</a></li><li class="chapter-item "><a href="../../math/dirichlet.html"><strong aria-hidden="true">3.4.</strong> Dirichlet 卷积</a></li><li class="chapter-item "><a href="../../math/poly/index.html"><strong aria-hidden="true">3.5.</strong> 多项式</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../math/poly/convolution.html"><strong aria-hidden="true">3.5.1.</strong> 卷积</a></li><li class="chapter-item "><a href="../../math/poly/fft.html"><strong aria-hidden="true">3.5.2.</strong> FFT</a></li><li class="chapter-item "><a href="../../math/poly/newton.html"><strong aria-hidden="true">3.5.3.</strong> 牛顿迭代</a></li></ol></li><li class="chapter-item expanded "><a href="../../math/multiplicative-function/index.html"><strong aria-hidden="true">3.6.</strong> 积性函数</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../math/multiplicative-function/min25.html" class="active"><strong aria-hidden="true">3.6.1.</strong> Min_25 筛法</a></li><li class="chapter-item "><a href="../../math/multiplicative-function/zhouge.html"><strong aria-hidden="true">3.6.2.</strong> 州阁筛</a></li><li class="chapter-item "><a href="../../math/multiplicative-function/pn.html"><strong aria-hidden="true">3.6.3.</strong> Powerful Number 筛</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../struct/index.html"><strong aria-hidden="true">4.</strong> 数据结构</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../struct/fenwick-tree.html"><strong aria-hidden="true">4.1.</strong> 数据结构</a></li><li class="chapter-item "><a href="../../struct/sparse-table.html"><strong aria-hidden="true">4.2.</strong> ST 表</a></li></ol></li><li class="chapter-item expanded "><a href="../../string/index.html"><strong aria-hidden="true">5.</strong> 字符串</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../string/minimal-string.html"><strong aria-hidden="true">5.1.</strong> 最小表示法</a></li></ol></li><li class="chapter-item expanded "><a href="../../other/index.html"><strong aria-hidden="true">6.</strong> 附录</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../other/markdown.html"><strong aria-hidden="true">6.1.</strong> Markdown 简介</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -158,13 +158,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     <h1 class="menu-title">ZAFU ACM Wiki</h1>
 
                     <div class="right-buttons">
-                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         <a href="https://github.com/zafuacm/wiki/" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        <a href="https://github.com/zafuacm/wiki/edit/main/docs/math/multiplicative-function.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <a href="https://github.com/zafuacm/wiki/edit/main/docs/math/multiplicative-function/min25.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
                     </div>
@@ -191,32 +191,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="积性函数"><a class="header" href="#积性函数">积性函数</a></h1>
-<p>对于数论函数 $f(x)$​，若对于任意的 $a,b$​ 满足 $a \bot b$​​（即 $a,b$ 互质） 都有</p>
-<p>$$
-f(ab) = f(a)f(b)
-$$</p>
-<p>则称 $f(x)$ 为积性函数。</p>
-<p>若对任意的 $a,b$ 都有 $f(ab)=f(a)f(b)$，则称 $f(x)$ 为完全积性函数。</p>
-<h2 id="例子"><a class="header" href="#例子">例子</a></h2>
-<p>积性函数的例子有</p>
-<ul>
-<li>Euler 函数：$\varphi(n) := \sum\limits_{i=1}^n[\gcd(i,n)=1]$。</li>
-<li>Mobius 函数：$\mu(n) := \begin{cases}1 &amp; n=1 \\ 0 &amp; \exists d&gt;1,d^{2} \mid n \\ (-1)^{\omega(n)} &amp; \text{otherwise}\end{cases}$</li>
-</ul>
-<p>完全积性函数的例子有</p>
-<ul>
-<li>单位函数：$\varepsilon(x) := [x=1]$。</li>
-<li>指数函数：$\operatorname{id}_k(x) := x^k$。</li>
-<li>常数函数：$1(x) := 1$​。</li>
-</ul>
-<h2 id="性质"><a class="header" href="#性质">性质</a></h2>
-<p>积性函数与积性函数的卷积是积性函数，积性函数对卷积的逆元也是积性函数，即积性函数的全体构成了一个 Abel 群，其单位元是 $\varepsilon$​。</p>
-<p>快速求前缀和，<a href="../dirichlet/#%E6%9D%9C%E6%95%99%E7%AD%9B">杜教筛</a> 是一种可选的方案。但是其该算法有一些局限性，下面给出两种适用更广泛的快速计算方法。</p>
+                        <h1 id="min_25-筛"><a class="header" href="#min_25-筛">Min_25 筛</a></h1>
+<p><a href="https://min-25.hatenablog.com/">Min_25</a> 提出了 “Min_25 筛” 。之后，Min_25 还进行了改进，想了解的可以自行了解，这里我们只讲朴素 Min_25 筛。</p>
 <p>把质数集记作 $x \notin \mathbb{P}$，第 $i$ 个质数记作 $p_i$。特殊的，$p_0 = 1$。</p>
 <p>记 $x$ 的最小非 $1$ 因子为 $\operatorname{lpf}(x)$，显然也是质因子。容易发现，若 $x \notin \mathbb{P}$，则有 $\operatorname{lpf}(x) \leqslant \sqrt{x}$。</p>
-<h2 id="min_25-筛"><a class="header" href="#min_25-筛">Min_25 筛</a></h2>
-<p><a href="https://min-25.hatenablog.com/">Min_25</a> 提出了 “Min_25 筛” 。之后，Min_25 还进行了改进，想了解的可以自行了解，这里我们只讲朴素 Min_25 筛。</p>
 <p>记</p>
 <p>$$
 F(n,k) = \sum_{x=2}^n[p_k &lt; \operatorname{lpf}(x)]f(x)
@@ -565,65 +543,6 @@ struct Min25_mu {
 </code></pre>
 </div>
 </details>
-<h2 id="pn-筛"><a class="header" href="#pn-筛">PN 筛</a></h2>
-<p>TODO</p>
-<h2 id="舟阁筛"><a class="header" href="#舟阁筛">舟阁筛</a></h2>
-<p>设 $n$ 的唯一分解是</p>
-<p>$$
-n = p_1^{k_1} p_2^{k_2} \cdots p_s^{k_s}
-$$</p>
-<p>则积性函数 $f(x)$​​​ 的在 $x=n$ 处的值有</p>
-<p>$$
-f(n) = f(p_1^{k_1}) f(p_2^{k_2}) \cdots f(p_s^{k_s})
-$$</p>
-<p>由于数 $i$ 最多只能拥有一个大于 $\sqrt{n}$​ 的因子，因此按照是否具有分类，可以得到</p>
-<p>$$
-\begin{aligned}
-\sum_{i=1}^nf(i) &amp;= \sum_{\begin{subarray}{c}
-x \leqslant n \\ x {\rm \ 无大于\ } \sqrt{n} {\rm \ 的质因子}
-\end{subarray}}
-\left[ f(x) \left( 1 + \sum_{\sqrt{n} &lt; p \leqslant \lfloor n/x \rfloor} f(p) \right)\right] \\
-&amp;= \sum_{x=1}^{\sqrt{n}} f(x)\sum_{p &gt; \sqrt{n}}^{\lfloor n/x \rfloor} f(p) + 
-\sum_{\begin{subarray}{c}
-x \leqslant n\\x {\rm \ 无大于\ } \sqrt{n} {\rm \ 的质因子}
-\end{subarray}} f(x)
-\end{aligned}
-$$</p>
-<p>关键就在如何快速求这几部分。</p>
-<h3 id="part-1-1"><a class="header" href="#part-1-1">Part 1</a></h3>
-<p>考虑记 $[1,l]$ 中不含因子 $p_1,\cdots,p_t$ 的数在 $f$ 下取值之和为 $g(t,l)$。递推关系有</p>
-<p>$$
-g(t,j) = g(t-1, j) - f(p_t) g(t-1, \lfloor l/p_t \rfloor)
-$$</p>
-<p>边界为 $g(0,l) = \sum\limits_{i=1}^l f(i)$​。设 $[1,\sqrt{n}]$​ 内质数的个数为 $m$，因此第一部分即化为计算</p>
-<p>$$
-\sum_{x=1}^{\sqrt{n}} f(x)\sum_{p &gt; \sqrt{n}}^{\lfloor n/x \rfloor} f(p) = \sum_{x=1}^{\sqrt{n}} f(x) g(m, \lfloor n/x \rfloor)
-$$</p>
-<p>然而朴素的预处理 $g$ 的复杂度是 $O\left( \dfrac{n}{\log n} \right)$​，需要再优化。</p>
-<p>容易发现当 $p_{t+1} &gt; l$ 时有 $g(t,l) = f(1) = 1$。故当 $p_t^2 &gt; l$ 时，代入递推有</p>
-<p>$$
-g(t,l) = g(t-1, j) - f(p_t)
-$$</p>
-<p>因此 $p_t^2 &gt; j$​ 时的计算是可以省去的，直接累加这一段质数取值即可。此时复杂度 $O\left( \dfrac{n^{\frac{3}{4}}}{\log n} \right)$​​。</p>
-<h3 id="part-2-1"><a class="header" href="#part-2-1">Part 2</a></h3>
-<p>再考虑记 $[1,l]$ 中只含因子 $p_t,\cdots,p_m$ 的数在 $f$​ 下取值之和为 $h(t,l)$​。递推有</p>
-<p>$$
-h(t,l) = h(t+1, l) + \sum_{c=1} f(p_t^c) h(t+1, \lfloor l/p_t^c \rfloor)
-$$</p>
-<p>其边界条件为 $h(m+1, l) = f(1) = 1$​。于是</p>
-<p>$$
-\sum_{\begin{subarray}{c}
-x \leqslant n\\x {\rm \ 无大于\ } \sqrt{n} {\rm \ 的质因子}
-\end{subarray}} f(x) = h(0, n)
-$$</p>
-<p>类似的优化 $h$ 的计算。当 $p_t &gt; l$ 时有 $h(t,l) = f(1) = 1$，代入递推，当 $p_t^2 &gt; l$ 时有</p>
-<p>$$
-h(t,l) = h(t-1,l) + f(p_t)
-$$</p>
-<p>同样直接累加。此处复杂度 $O\left( \dfrac{n^{\frac{3}{4}}}{\log n} \right)$​​。</p>
-<h3 id="all"><a class="header" href="#all">All</a></h3>
-<p>总复杂度 $O\left( \dfrac{n^{\frac{3}{4}}}{\log n} \right)$。我们要求 $f(p)$​ 是容易计算的，否则其会增加额外的损耗。</p>
-<p>因为出现了更好用的 Min_25 筛，舟阁筛已经用不到了。</p>
 <h2 id="参考资料"><a class="header" href="#参考资料">参考资料</a></h2>
 <ul>
 <li><a href="https://oi-wiki.org/math/number-theory/min-25/">Min_25 筛 - OI Wiki</a></li>
@@ -633,10 +552,10 @@ $$</p>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../math/dirichlet.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../../math/multiplicative-function/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                            <a rel="next" href="../math/poly/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../../math/multiplicative-function/zhouge.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         <div style="clear: both"></div>
@@ -645,10 +564,10 @@ $$</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../math/dirichlet.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../../math/multiplicative-function/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                    <a rel="next" href="../math/poly/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../../math/multiplicative-function/zhouge.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
@@ -658,12 +577,12 @@ $$</p>
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
-        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
     </body>
