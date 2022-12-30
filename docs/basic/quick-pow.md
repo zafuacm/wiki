@@ -53,9 +53,8 @@ int qpow(int a, int n) {
 }
 ```
 
-```admonish info "思考"
-为什么不写 `qpow(a, n / 2) * qpow(a, n / 2)`，而用 `t` 进行存储？
-```
+!!! info "思考"
+    为什么不写 `qpow(a, n / 2) * qpow(a, n / 2)`，而用 `t` 进行存储？
 
 递归本身也具有一定的开销，我们可以稍加思考，改进得到非递归法。
 
