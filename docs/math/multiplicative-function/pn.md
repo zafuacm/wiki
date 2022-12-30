@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Powerful Number 筛
 
 对于数 $n$，记其质因分解为

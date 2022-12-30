@@ -43,13 +43,18 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
   - footnotes
   - def_list
   - attr_list
   - pymdownx.tabbed
   - toc:
       permalink: ⚓︎
-      slugify: !!python/name:pymdownx.slugs.uslugify
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
@@ -111,12 +116,16 @@ nav:
     - 中国剩余定理: math/crt.md
     - 基础博弈: math/game-theory.md
     - Dirichlet 卷积: math/dirichlet.md
-    - 积性函数: math/multiplicative-function.md
     - 多项式:
       - 简介: math/poly/index.md
       - FFT: math/poly/fft.md
       - 卷积: math/poly/convolution.md
       - 牛顿迭代: math/poly/newton.md
+    - 积性函数:
+      - 简介: math/multiplicative-function/index.md
+      - Min_25 筛法: math/multiplicative-function/min25.md
+      - 州阁筛: math/multiplicative-function/zhouge.md
+      - Powerful Number 筛: math/multiplicative-function/pn.md
   - 数据结构:
     - 简介: struct/index.md
     - 树状数组: struct/fenwick-tree.md

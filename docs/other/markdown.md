@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Markdown 介绍
 
 我推荐 Markdown，因为它足够流行，足够简单。
