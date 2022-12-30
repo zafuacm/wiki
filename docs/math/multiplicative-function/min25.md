@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Min_25 筛
 
 [Min_25](https://min-25.hatenablog.com/) 提出了 “Min_25 筛” 。之后，Min_25 还进行了改进，想了解的可以自行了解，这里我们只讲朴素 Min_25 筛。

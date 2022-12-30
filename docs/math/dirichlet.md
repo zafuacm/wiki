@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Dirichlet 卷积
 
 对于数论函数 $f(x)$ 和 $g(x)$，则定义

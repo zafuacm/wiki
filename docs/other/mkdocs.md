@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # MkDocs
 
 决定同时使用 MdBook，应该尽量避免使用这里不通用的东西。

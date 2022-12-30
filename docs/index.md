@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # 简介
 
 校队自用 Wiki。本网页部署于 GitHub Page，您也可以一同修改。
