@@ -370,6 +370,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/history/" class="md-nav__link">
+        历年成绩
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1364,9 +1378,9 @@ fn main() {
 </code></pre></div></td></tr></table></div>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="fm">println!</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="fm">println!</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <p>pygments 支持 434 种语言的高亮，你可以在 <a href="https://cyent.github.io/markdown-with-mkdocs-material/appendix/pygments/">这里</a> 找到它们。</p>
 <h2 id="列表">列表<a class="headerlink" href="#列表" title="Permanent link">⚓︎</a></h2>
@@ -1374,10 +1388,10 @@ fn main() {
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">*</span> Item 1
-<span class="k">*</span> Item 2
-  <span class="k">*</span> Item 2a
-  <span class="k">*</span> Item 2b
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">*</span><span class="w"> </span>Item 1
+<span class="k">*</span><span class="w"> </span>Item 2
+<span class="w">  </span><span class="k">*</span><span class="w"> </span>Item 2a
+<span class="w">  </span><span class="k">*</span><span class="w"> </span>Item 2b
 </code></pre></div></td></tr></table></div>
 <p>有序列表，点号与文本间需要加空格。可以全写 1 来自动编号。</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -1387,8 +1401,8 @@ fn main() {
 <span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">1.</span> Item 1
 <span class="k">1.</span> Item 2
 <span class="k">1.</span> Item 3
-  <span class="k">1.</span> Item 3a
-  <span class="k">1.</span> Item 3b
+<span class="w">  </span><span class="k">1.</span> Item 3a
+<span class="w">  </span><span class="k">1.</span> Item 3b
 </code></pre></div></td></tr></table></div>
 <p>任务列表，注意缩进空格是 4 个。</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -1396,8 +1410,8 @@ fn main() {
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">- [x]</span> Item 1
 <span class="k">- [ ]</span> Item 2
-    <span class="k">- [ ]</span> Item 2a
-    <span class="k">- [x]</span> Item 2b
+<span class="w">    </span><span class="k">- [ ]</span> Item 2a
+<span class="w">    </span><span class="k">- [x]</span> Item 2b
 </code></pre></div></td></tr></table></div>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Item 1</li>
@@ -1424,7 +1438,7 @@ fn main() {
 <span class="normal">4</span>
 <span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>比如 <span class="s">$</span><span class="nb">a^</span><span class="m">2</span><span class="o">+</span><span class="nb">b^</span><span class="m">2</span><span class="o">=</span><span class="nb">c^</span><span class="m">2</span><span class="s">$</span>，
 
-<span class="sb">$$</span><span class="nb"></span>
+<span class="sb">$$</span>
 <span class="nv">\sum</span><span class="nb">_{n</span><span class="o">=</span><span class="m">1</span><span class="nb">}^</span><span class="nv">\infty</span><span class="nb"> </span><span class="nv">\frac</span><span class="nb">{</span><span class="m">1</span><span class="nb">}{n^</span><span class="m">2</span><span class="nb">} </span><span class="o">=</span><span class="nb"> </span><span class="nv">\frac</span><span class="nb">{</span><span class="nv">\pi</span><span class="nb">^</span><span class="m">2</span><span class="nb">}{</span><span class="m">6</span><span class="nb">}</span>
 <span class="s">$$</span>
 </code></pre></div></td></tr></table></div>
@@ -1490,14 +1504,14 @@ fn main() {
 <span class="normal">11</span>
 <span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code>\ backslash
 ` backtick
-<span class="k">*</span> asterisk
+<span class="k">*</span><span class="w"> </span>asterisk
 _ underscore
 {} curly braces
 [] square brackets
 () parentheses
 <span class="gh"># hash mark</span>
 + plus sign
-<span class="k">-</span> minus sign (hyphen)
+<span class="k">-</span><span class="w"> </span>minus sign (hyphen)
 . dot
 ! exclamation mark
 </code></pre></div></td></tr></table></div>
