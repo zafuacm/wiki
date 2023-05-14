@@ -93,8 +93,9 @@ extra_css:
 nav:
   - 关于:
     - 简介: index.md
-    - 如何参与: about/support.md
     - 历年成绩: about/history.md
+    - 常见问题: about/faq.md
+    - 参与文档建设: about/support.md
   - 基础:
     - 简介: basic/index.md
     - 算法思想: basic/basic.md
@@ -132,5 +133,6 @@ nav:
     - 树状数组: struct/fenwick-tree.md
     - ST 表: struct/sparse-table.md
   - 其它:
+    - 简介: other/index.md
     - Markdown: other/markdown.md
     - MkDocs: other/mkdocs.md
