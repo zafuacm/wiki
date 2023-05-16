@@ -34,3 +34,7 @@
     overflow-x: scroll;
     overflow-y: hidden;
 }
+
+.md-typeset img, .md-typeset svg {
+    max-width: 100%;
+}
