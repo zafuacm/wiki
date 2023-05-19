@@ -9,3 +9,8 @@ comments: true
 训练基地位于学 10 一楼侧，有一块蓝色大招牌。
 
 这里有 ZAFU 集训队相关介绍、规章制度、宣传、历史成绩等资料，也有集训队内教学文档。
+
+## 照片
+
+![img1](./about/img/img1.jpeg)
+![img2](./about/img/img2.jpeg)
