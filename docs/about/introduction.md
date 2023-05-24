@@ -27,7 +27,7 @@ ACM 集训队主要训练并参加 ICPC、CCPC 和浙江省赛，其他比赛如
 
 算法竞赛一般全称程序设计竞赛，考察如何设计算法以解决题目，重点是解决问题的能力。
 
-> 高中也有算法竞赛，[NOI 全国青少年信息学奥林匹克竞赛](https://www.noi.cn/)，是五大竞赛之一，NOI 金牌可以获得清北的保送资格。很多高中参与过 OI 的学生大学会继续参加 ACM，因此差距会非常巨大，当你还为 `for/if` 等语法烦恼时，已经有大一有 10 年代码经验了，刚入学能够摘金夺银。
+> 高中也有算法竞赛，[NOI 全国青少年信息学奥林匹克竞赛](https://www.noi.cn/)，五大竞赛之一，NOI 金牌可以获得清北的保送资格。很多高中参与过 OI 的学生大学会继续参加 ACM，因此差距会非常巨大，当你还为 `for/if` 等语法烦恼时，已经有大一有 10 年代码经验了，刚入学能够摘金夺银。
 
 网上很少有总结 ACM 到底是啥，就一句写题。这里谈谈我的理解。
 
@@ -44,7 +44,7 @@ ACM 集训队主要训练并参加 ICPC、CCPC 和浙江省赛，其他比赛如
 
 算法竞赛有点研究的气质，可能与大家接触的工程相关画风很不一致。事实也确实如此，算法竞赛和学术界的联系比较紧密。
 
-竞赛界目前远落后于学术界，经常有选手研读并引入的论文里的算法。但在部分问题上，竞赛界也有一些领先，OI 国家集训队每年都会出一本 [论文集](https://github.com/OI-wiki/libs/tree/master/集训队历年论文)，部分优秀论文可以发 [SOSA Paper](https://drops.dagstuhl.de/opus/volltexte/2018/10043/)。也有很多算法选手会往计算机的理论方向发展，如 TCS（[Theoretical computer science](https://en.wikipedia.org/wiki/Theoretical_computer_science)）和 PLT（[Programming language theory](https://en.wikipedia.org/wiki/Programming_language_theory)。
+竞赛界目前远落后于学术界，经常有选手研读并引入的论文里的算法。但在部分问题上，竞赛界也有一些领先，OI 国家集训队每年都会出一本 [论文集](https://github.com/OI-wiki/libs/tree/master/集训队历年论文)，部分优秀论文可以发 [SOSA Paper](https://drops.dagstuhl.de/opus/volltexte/2018/10043/)。也有很多算法选手会往计算机的理论方向发展，如 TCS（[Theoretical computer science](https://en.wikipedia.org/wiki/Theoretical_computer_science)）和 PLT（[Programming language theory](https://en.wikipedia.org/wiki/Programming_language_theory)）。
 
 ## 加入我们，你可以获得
 
@@ -53,11 +53,13 @@ ACM 集训队主要训练并参加 ICPC、CCPC 和浙江省赛，其他比赛如
 - 个人国一 4000，国二 2500，国三 1500。
 - 团体金奖 8000，银奖 5000，铜奖 3000。
 
-平均下来，每年都有两三个大一能拿个人国奖。
+平均下来，每年都有两三个大一能拿个人国奖。[往年竞赛成绩](./about/history.md) 也十分出彩，近年屡获国家级金奖。
 
-[往年成绩](./about/history.md) 也十分出彩，近年屡获国家级金奖，很多队员在本科毕业直接拿到了阿里、字节跳动等大厂的 Offer，也有队员在毕业后考研到浙大、北大。
+获奖难度和含金量成正比，XCPC 的奖牌能够帮助你在考研复试、工作面试时脱颖而出。很多队员在本科毕业直接拿到了阿里、字节跳动等大厂的 Offer，也有队员在毕业后考研到浙大、北大。
 
-如果你想加入，请查看 [加入我们](./join-us.md) 一节。
+假如你对自己的未来有所规划，希望大学四年能够提升自己，ACM 集训队是一个不错的平台。
+
+如果你心动了，可以查看 [加入我们](./join-us.md) 一节进一步了解。
 
 ## 协会和集训队
 
@@ -69,12 +71,12 @@ ACM 协会更偏向于向同学们普及算法，会组织算法助学课，筹�
 
 ## 语言选择
 
-主流是 C/C++。几乎所有比赛都可以使用 Java、Python 和 C/C++，ICPC 正在引入 Kotlin。
+主流是 C/C++。几乎所有比赛都可以使用 Java、Python 和 C/C++。
 
-刷题网站支持的语言很多，有 NodeJS、Rust、Go、Haskell 等几十种语言，你会的不会的都有。
+刷题网站支持的语言很多，有 NodeJS、Rust、Kotlin、Go、Haskell 等几十种语言，你会的不会的都有。
 
 ## 如何加入
 
 写完指定的 150 道（女生 120 道）入门题，或者在新生赛、校赛中获得比较高的排名，将获得集训队的面试机会。
 
-[加入我们](./join-us.md) 一节里有详细的介绍。
+详细的介绍见 [加入我们](./join-us.md) 一节。
