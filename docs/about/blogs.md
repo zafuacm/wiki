@@ -12,6 +12,7 @@
 ## 2019 级
 
 - [StandNotAlone](https://blog.csdn.net/standnotalone/)
+- [sy](https://clumsy-sy.github.io/)
 
 ## 2018 级
 
