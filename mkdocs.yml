@@ -97,11 +97,11 @@ nav:
     - 往年竞赛成绩: about/history.md
     - 常见问题: about/faq.md
     - 如何加入: about/join-us.md
-    - 如何提升: about/how-to-train.md
     - 学长博客: about/blogs.md
     - 参与文档建设: about/support.md
   - 基础:
     - 简介: basic/index.md
+    - 如何提升: basic/how-to-train.md
     - 算法思想: basic/basic.md
     - 优化例题: basic/example.md
     - 递归: basic/divide.md
