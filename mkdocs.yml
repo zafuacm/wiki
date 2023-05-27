@@ -92,11 +92,16 @@ extra_css:
 
 nav:
   - 关于:
-    - 简介: index.md
-    - 如何参与: about/support.md
-    - 历年成绩: about/history.md
+    - 主页: index.md
+    - 集训队简介: about/introduction.md
+    - 如何加入: about/join-us.md
+    - 往年竞赛成绩: about/history.md
+    - 常见问题: about/faq.md
+    - 队员风采: about/honor.md
+    - 参与文档建设: about/support.md
   - 基础:
     - 简介: basic/index.md
+    - 如何提升: basic/how-to-train.md
     - 算法思想: basic/basic.md
     - 优化例题: basic/example.md
     - 递归: basic/divide.md
@@ -132,5 +137,6 @@ nav:
     - 树状数组: struct/fenwick-tree.md
     - ST 表: struct/sparse-table.md
   - 其它:
+    - 简介: other/index.md
     - Markdown: other/markdown.md
     - MkDocs: other/mkdocs.md
