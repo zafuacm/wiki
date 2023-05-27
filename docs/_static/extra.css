@@ -38,3 +38,7 @@
 .md-typeset img, .md-typeset svg {
     max-width: 100%;
 }
+
+aside, body, input {
+    font-feature-settings: unset;
+}

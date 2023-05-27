@@ -13,4 +13,4 @@ comments: true
 ## 照片
 
 ![img1](./about/img/img1.jpeg)
-![img2](./about/img/img2.jpeg)
+![img3](./about/img/img3.png)
