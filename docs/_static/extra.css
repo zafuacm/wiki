@@ -35,7 +35,7 @@
     overflow-y: hidden;
 }
 
-.md-typeset img, .md-typeset svg {
+.md-typeset > p > img, .md-typeset > p > svg {
     max-width: 100%;
 }
 
