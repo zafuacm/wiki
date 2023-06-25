@@ -23,26 +23,26 @@ comments: true
 注意到第 2 步结束时，对于选中的元素来说，左边一定是比它小的，右边一定是比它大的。排序后左边的元素一定不会溜到右边去，右边也不会来左边。这种看起来没什么用的有序性，足以完成全部的排序。
 
 ```cpp
-int nn[MAXN];
+int nn[N];
 
 void quick_sort(int l, int r) {
-    if(l >= r)
-        return;
-    int i = l, j = r;
-    int x = nn[(l+r)/2];
-    while(i <= j) {
-        while(nn[j] > x)
-            j--;
-        while(nn[i] < x)
-            i++;
-        if(i <= j) {
-            swap(nn[i], nn[j]);
-            i++;
-            j--;
-        }
+  if(l >= r)
+    return;
+  int i = l, j = r;
+  int x = nn[(l+r)/2];
+  while(i <= j) {
+    while(nn[j] > x)
+      j--;
+    while(nn[i] < x)
+      i++;
+    if(i <= j) {
+      swap(nn[i], nn[j]);
+      i++;
+      j--;
     }
-    quick_sort(l, j);
-    quick_sort(i, r);
+  }
+  quick_sort(l, j);
+  quick_sort(i, r);
 }
 ```
 

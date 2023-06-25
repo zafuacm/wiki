@@ -17,12 +17,12 @@ comments: true
 
 ```cpp
 void build() {
-    for (int i = 1; i <=n; i++) {
-        cc[i] += aa[i];
-        int j = i + (i&(-i));
-        if(j <= n)
-            cc[j] += cc[i];
-    }
+  for (int i = 1; i <=n; i++) {
+    cc[i] += aa[i];
+    int j = i + (i&(-i));
+    if(j <= n)
+      cc[j] += cc[i];
+  }
 }
 ```
 
@@ -30,12 +30,12 @@ void build() {
 
 ```cpp
 int ask(int *cc, int x) {
-    int sum = 0;
-    while (x >= 1) {
-        sum += cc[x];
-        x -= x&(-x);
-    }
-    return sum;
+  int sum = 0;
+  while (x >= 1) {
+    sum += cc[x];
+    x -= x&(-x);
+  }
+  return sum;
 }
 ```
 
@@ -43,10 +43,10 @@ int ask(int *cc, int x) {
 
 ```cpp
 void add(int *cc, int x, int k) {
-    while (x <= n) {
-        cc[x] += k;
-        x += x&(-x);
-    }
+  while (x <= n) {
+    cc[x] += k;
+    x += x&(-x);
+  }
 }
 ```
 
@@ -55,15 +55,15 @@ void add(int *cc, int x, int k) {
 维护数组 $a$ 的额外差分数组 $b$，区间加就被转化为 $b$ 的单点增加，单点查询就被转化为 $b$ 的区间查询。
 
 ```cpp
-int bb[MAXN];
+int bb[N];
 
 void badd(int l, int r, int k) {
-    add(bb, l, k);
-    add(bb, r+1, -k);
+  add(bb, l, k);
+  add(bb, r+1, -k);
 }
 
 int bask(int x) {
-    return ask(bb, x) + aa[x];
+  return ask(bb, x) + aa[x];
 }
 ```
 
@@ -78,17 +78,17 @@ $$
 因此还需要两个树状数组来维护 $\sum b_i$ 和 $\sum b_ii$。查询前缀和 `cask`。
 
 ```cpp
-int bb1[MAXN], bb2[MAXN];
+int bb1[N], bb2[N];
 
 void cadd(int l, int r, int k) {
-    add(bb1, l, k);
-    add(bb1, r+1, -k);
-    add(bb2, l, l * k);
-    add(bb2, r+1, -(r+1) * k);
+  add(bb1, l, k);
+  add(bb1, r+1, -k);
+  add(bb2, l, l * k);
+  add(bb2, r+1, -(r+1) * k);
 }
 
 int cask(int x) {
-    return (x+1) * ask(bb1, x) + ask(cc,x) - ask(bb2,x);
+  return (x+1) * ask(bb1, x) + ask(cc,x) - ask(bb2,x);
 }
 ```
 

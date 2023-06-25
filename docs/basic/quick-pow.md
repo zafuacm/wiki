@@ -12,7 +12,7 @@ comments: true
 const int mod = 10007;
 int ans = 1;
 for (int i = 0; i < 100; i++)
-    ans = ans * 3 % mod;
+  ans = ans * 3 % mod;
 return ans;
 ```
 
@@ -46,14 +46,14 @@ $$
 ```cpp
 const int mod = 10007;
 int qpow(int a, int n) {
-    if(n == 0) {
-        return 1;
-    } else if(n % 2 == 1) {
-        return qpow(a, n - 1) * a % mod;
-    } else {
-        int t = qpow(a, n / 2);
-        return t * t % mod;
-    }
+  if(n == 0) {
+    return 1;
+  } else if(n % 2 == 1) {
+    return qpow(a, n - 1) * a % mod;
+  } else {
+    int t = qpow(a, n / 2);
+    return t * t % mod;
+  }
 }
 ```
 
@@ -77,10 +77,10 @@ $$
 因为 $100_{10} = 1100100_2$，于是有
 
 $$
-\begin{matrix} 
+\begin{matrix}
 & a^1 & a^2 & a^4 & a^8 & a^{16} & a^{32} & a^{64} \\
-100 & & & 4 & & & 32 & 64\\
-100 & 0 & 0 & 1 & 0 & 0 & 1 & 1 
+100 & & & 4 & & & 32 & 64 \\
+100 & 0 & 0 & 1 & 0 & 0 & 1 & 1
 \end{matrix}
 $$
 
@@ -91,28 +91,28 @@ $$
 ```cpp
 const int mod = 10007;
 int qpow(int a, int n) {
-    int ans = 1;
-    while(n > 0) {
-        if(n % 2 == 1)
-            ans = ans * a % mod;
-        a = a * a % mod;
-        n = n / 2;
-    }
-    return ans;
+  int ans = 1;
+  while(n > 0) {
+    if(n % 2 == 1)
+      ans = ans * a % mod;
+    a = a * a % mod;
+    n = n / 2;
+  }
+  return ans;
 }
 ```
 
 在实际使用时往往写成这样
 
 ```cpp
-ll qpow(ll a, ll b, ll p) {
-    ll ret = p != 1;
-    for(; b; b >>= 1) {
-        if(b & 1)
-            ret = a * ret % p;
-        a = a * a % p;
-    }
-    return ret;
+i64 qpow(i64 a, i64 b, i64 p) {
+  i64 ret = p != 1;
+  for(; b; b >>= 1) {
+    if(b & 1)
+      ret = a * ret % p;
+    a = a * a % p;
+  }
+  return ret;
 }
 ```
 
@@ -126,7 +126,7 @@ ll qpow(ll a, ll b, ll p) {
 
 $$
 F_{n+2} = F_{n+1} + F_{n}
-$$ 
+$$
 
 可以写成矩阵乘法形式
 

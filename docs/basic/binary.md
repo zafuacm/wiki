@@ -21,11 +21,11 @@ comments: true
 
 ```cpp
 while (l < r) {
-    int mid = (l + r) / 2;
-    if (aa[mid] >= x)
-        r = mid;
-    else
-        l = mid + 1;
+  int mid = (l + r) / 2;
+  if (aa[mid] >= x)
+    r = mid;
+  else
+    l = mid + 1;
 }
 return l;
 ```
@@ -36,11 +36,11 @@ return l;
 
 ```cpp
 while (l < r) {
-    int mid = (l + r + 1) / 2;
-    if (aa[mid] >= x)
-        l = mid;
-    else
-        r = mid - 1;
+  int mid = (l + r + 1) / 2;
+  if (aa[mid] >= x)
+    l = mid;
+  else
+    r = mid - 1;
 }
 return l;
 ```

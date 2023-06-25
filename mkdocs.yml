@@ -11,7 +11,9 @@ theme:
     - navigation.instant
     - navigation.sections
     - navigation.expand
+    - navigation.footer
     - navigation.top
+    - content.code.copy
   palette:
     scheme: default
     primary: white
@@ -101,9 +103,9 @@ nav:
     - 参与文档建设: about/support.md
   - 基础:
     - 简介: basic/index.md
-    - 如何提升: basic/how-to-train.md
+    - 语法基础: basic/grammar.md
+    - 时间复杂度初步: basic/complexity.md
     - 算法思想: basic/basic.md
-    - 优化例题: basic/example.md
     - 递归: basic/divide.md
     - 二分: basic/binary.md
     - 贪心: basic/greedy.md
@@ -112,7 +114,7 @@ nav:
     - 动态规划: basic/dp.md
     - 前缀和 & 差分: basic/prefix-sum.md
     - 快速幂: basic/quick-pow.md
-    - 结语: basic/end.md
+    - 继续提升: basic/how-to-train.md
   - 字符串:
     - 简介: string/index.md
     - 最小表示法: string/minimal-string.md
