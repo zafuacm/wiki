@@ -39,6 +39,10 @@ $$
 
 直接有反序最小。
 
+## 参考资料
+
+- [贪心 - OIWiki](https://oi-wiki.org/basic/greedy/)。
+
 ## 练习
 
 - [P4995 跳跳！](https://www.luogu.com.cn/problem/P4995)

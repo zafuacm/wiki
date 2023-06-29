@@ -101,9 +101,9 @@ for (int i = 0; i < n; i++) {
 
 ## 约瑟夫问题
 
-## 扩展 · 区间 DP
+## 参考资料
 
-## 扩展 · 数位 DP
+- [动态规划基础 - OI Wiki](https://oi-wiki.org/dp/basic/)。
 
 ## 例题
 

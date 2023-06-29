@@ -32,6 +32,8 @@ int f(int n) {
 }
 ```
 
+阶乘代码的 [可视化](https://www.cs.usfca.edu/~galles/visualization/RecFact.html)。
+
 ### Fibonacci 数列
 
 假如我们要计算 Fibonacci 数列，初始值 $f(1) = f(2) = 1$，且
@@ -177,7 +179,9 @@ int f(int n) {
     }
     ```
 
-更深入的可以查看 [Link](https://oi-wiki.org/search/backtracking/) 了解。
+另一个回溯法的经典问题是 $N$ 皇后，网上资料很多。这里有一份 [可视化](https://www.cs.usfca.edu/~galles/visualization/RecQueens.html)。
+
+更深入的可以查看 [Link]() 了解。
 
 ## 分治
 
@@ -193,6 +197,11 @@ int f(int n) {
 - 子问题的解可以合并为原问题的解。
 
 常用的实现分治的方法有递归、递推、动态规划、搜索等，灵活多变。
+
+## 参考资料
+
+- [递归 & 分治 - OIWiki](https://oi-wiki.org/basic/divide-and-conquer/)。
+- [回溯法 - OIWiki](https://oi-wiki.org/search/backtracking/)。
 
 ## 例题
 

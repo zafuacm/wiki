@@ -145,6 +145,10 @@ $$
 
 可以对矩阵使用快速幂，那么计算第 $n$ 项只需 $O(\log n)$。
 
+## 参考资料
+
+- [快速幂 - OIWiki](https://oi-wiki.org/math/binary-exponentiation/)。
+
 ## 例题
 
 - [P1226 【模板】快速幂](https://www.luogu.com.cn/problem/P1226)

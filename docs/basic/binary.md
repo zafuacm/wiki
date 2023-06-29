@@ -45,6 +45,8 @@ while (l < r) {
 return l;
 ```
 
+如果感觉较为抽象，可以查看 [可视化](https://www.cs.usfca.edu/~galles/visualization/Search.html)。
+
 ## 应用
 
 对于单调的函数，也可以通过二分查找查找其符合条件的值。
@@ -58,6 +60,10 @@ return l;
 同时，答案是单调的，换句话说，随着 $H$ 降低，锯下的木材只会增加。
 
 我们可以设计函数 $f(H)$，令其值为锯下木材的总长。于是我们可以对答案二分，每次检验其可行性，找到可行中最大的 $H$。
+
+## 参考资料
+
+- [二分 - OIWiki](https://oi-wiki.org/basic/binary/)
 
 ## 例题
 

@@ -139,3 +139,7 @@ int main() {
   return 0;
 }
 ```
+
+## 参考资料
+
+- [语言基础 - OIWiki](https://oi-wiki.org/lang/)。

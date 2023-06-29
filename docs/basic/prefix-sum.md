@@ -94,11 +94,11 @@ return sum - ans;
 
 差分可以把“区间增加”变成“单点增加”。详细见 [P2367 语文成绩](https://www.luogu.com.cn/problem/P2367)。
 
+## 参考资料
+
+- [前缀和 & 差分 - OIWiki](https://oi-wiki.org/basic/prefix-sum/)。
+
 ## 例题
 
 - [P5638 光骓者的荣耀](https://www.luogu.com.cn/problem/P5638)
 - [P2367 语文成绩](https://www.luogu.com.cn/problem/P2367)
-
-## 扩展 · 二维前缀和
-
-## 扩展 · 高维前缀和

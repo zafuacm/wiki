@@ -46,7 +46,7 @@ void quick_sort(int l, int r) {
 }
 ```
 
-更多的排序方法，例如希尔排序、归并排序、桶排序、堆排序等，这里就不讲了，一般快排够用了。想了解的可以去 [排序 - OI Wiki](https://oi-wiki.org/basic/sort-intro/) 看看。
+更多的排序方法，例如希尔排序、归并排序、桶排序、堆排序等，这里就不讲了，一般快排够用了。
 
 ## 应用
 
@@ -55,6 +55,10 @@ void quick_sort(int l, int r) {
 二分查找：预处理后有序的，查找会快很多，
 
 快排可以做到 $O(n)$ 求第 $k$ 小数。
+
+## 参考资料
+
+- [排序 - OI Wiki](https://oi-wiki.org/basic/sort-intro/)。
 
 ## 例题
 

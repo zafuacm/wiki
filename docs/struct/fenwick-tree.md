@@ -92,6 +92,10 @@ int cask(int x) {
 }
 ```
 
+## 参考资料
+
+- [树状数组 - OIWiki](https://oi-wiki.org/ds/fenwick/)。
+
 ## 练习
 
 - [L130 树状数组 1：单点修改，区间查询](https://loj.ac/problem/130)
