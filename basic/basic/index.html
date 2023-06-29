@@ -11,10 +11,10 @@
         <link rel="canonical" href="https://zafuacm.github.io/wiki/basic/basic/">
       
       
-        <link rel="prev" href="../how-to-train/">
+        <link rel="prev" href="../complexity/">
       
       
-        <link rel="next" href="../example/">
+        <link rel="next" href="../divide/">
       
       <link rel="icon" href="../../favicon.ico">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
@@ -503,8 +503,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to-train/" class="md-nav__link">
-        如何提升
+      <a href="../grammar/" class="md-nav__link">
+        语法基础
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../complexity/" class="md-nav__link">
+        时间复杂度初步
       </a>
     </li>
   
@@ -551,8 +565,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#枚举" class="md-nav__link">
-    枚举
+  <a href="#序" class="md-nav__link">
+    序
   </a>
   
 </li>
@@ -565,22 +579,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#分治" class="md-nav__link">
-    分治
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#贪心" class="md-nav__link">
-    贪心
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#预处理" class="md-nav__link">
     预处理
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#试机题" class="md-nav__link">
+    试机题
   </a>
   
 </li>
@@ -589,20 +596,6 @@
   
 </nav>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../example/" class="md-nav__link">
-        优化例题
-      </a>
     </li>
   
 
@@ -726,8 +719,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../end/" class="md-nav__link">
-        结语
+      <a href="../how-to-train/" class="md-nav__link">
+        继续提升
       </a>
     </li>
   
@@ -1285,8 +1278,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#枚举" class="md-nav__link">
-    枚举
+  <a href="#序" class="md-nav__link">
+    序
   </a>
   
 </li>
@@ -1299,22 +1292,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#分治" class="md-nav__link">
-    分治
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#贪心" class="md-nav__link">
-    贪心
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#预处理" class="md-nav__link">
     预处理
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#试机题" class="md-nav__link">
+    试机题
   </a>
   
 </li>
@@ -1339,48 +1325,33 @@
 
 
 <h1 id="算法思想">算法思想<a class="headerlink" href="#算法思想" title="Permanent link">⚓︎</a></h1>
+<p>语言只是工具，如果没有好的算法，也无法解决问题。这里会介绍一些基本的算法知识。</p>
+<p>部分内容来自于 <a href="https://oi-wiki.org/">OI-Wiki</a>，那里也有许多算法的介绍，感兴趣的可以看看。</p>
 <p>这里罗列了一些基本思想，可能较为抽象，可以反复回来看。</p>
 <p>抽象的理解“分治”、“贪心”等算法可能有一定难度，我还准备了一些例题来帮助思考。</p>
-<h2 id="枚举">枚举<a class="headerlink" href="#枚举" title="Permanent link">⚓︎</a></h2>
-<p>即从所有的可能的解中一一测试，判断题目的条件是否成立。</p>
-<p>枚举的关键：枚举空间，枚举顺序。</p>
-<p>显然问题的可能的解空间不能太大，否则无法在规定的时间内完成，因此要尽量减小枚举的范围。</p>
-<p>枚举的顺序也很重要，比如求最后一个满足条件的数，自然是从后往前枚举。</p>
-<p>常常使用搜索来实现枚举。</p>
+<h2 id="序">序<a class="headerlink" href="#序" title="Permanent link">⚓︎</a></h2>
+<p>假如你还没有写完 150 题进入集训队，请先进入集训队。详细请看 <a href="../../about/join-us/">如何加入</a>。</p>
+<p>假如你是刚刚进队的萌新，你会发现队内的个人赛对你来说很有难度。别急，大家大一也都是这么过来的。</p>
+<p>我挑选了一点题目，在每页的最下面。全部见 <a href="https://www.luogu.com.cn/training/70190">题目列表汇总</a>。请务必完成每节的习题，以加深掌握。</p>
 <h2 id="模拟">模拟<a class="headerlink" href="#模拟" title="Permanent link">⚓︎</a></h2>
 <p>用代码模拟题目中要求的操作。</p>
 <p>模拟题目通常具有码量大、操作多、思路繁复的特点，非常考验码力。</p>
-<h2 id="分治">分治<a class="headerlink" href="#分治" title="Permanent link">⚓︎</a></h2>
-<p>即分而治之，将一个大的问题划分成规模较小的子问题。大致可分成三步</p>
-<ol>
-<li>分解：将原问题分解为多个类似的子问题。</li>
-<li>解决：反复分解，直到子问题可以被直接解决。</li>
-<li>合并：将子问题的解合并成原问题的解。</li>
-</ol>
-<p>分治法能解决的问题一般有以下特征：</p>
-<ul>
-<li>该问题的规模较小时可以被容易的解决。</li>
-<li>子问题的解可以合并为原问题的解。</li>
-</ul>
-<p>常用的实现分治的方法有递归、递推、动态规划、搜索等，灵活多变。</p>
-<h2 id="贪心">贪心<a class="headerlink" href="#贪心" title="Permanent link">⚓︎</a></h2>
-<p>贪心算法，是用计算机来模拟一个“贪心”的人做出决策的过程。这个人十分贪婪，每一步行动总是按某种指标选取最优的操作。而且他目光短浅，总是只看眼前，并不考虑以后可能造成的影响。</p>
-<p>可想而知，只有在特定的问题下，贪心法才能获得最优解。因此使用贪心法时，要确保自己能证明其正确性。</p>
-<p>贪心算法常见的有两种证明方法：</p>
-<ol>
-<li>反证法：交换两个元素后答案不会更好，那么可以确定当前的算法是最优解了。</li>
-<li>归纳法：通过归纳证明答案是最优解。</li>
-</ol>
 <h2 id="预处理">预处理<a class="headerlink" href="#预处理" title="Permanent link">⚓︎</a></h2>
 <p>提前计算一些可能用到的数据，这样会避免每次计算带来的额外开销。</p>
 <p>有时也叫打表。</p>
+<h2 id="试机题">试机题<a class="headerlink" href="#试机题" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li><a href="https://www.luogu.com.cn/problem/P1001">P1001 A+B Problem</a></li>
+<li><a href="https://www.luogu.com.cn/problem/P1047">P1047 校门外的树</a></li>
+<li><a href="https://www.luogu.com.cn/problem/P2181">P2181 对角线</a></li>
+</ul>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2022年12月30日</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年6月29日</span>
       
     
   </small>
@@ -1462,6 +1433,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../complexity/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 时间复杂度初步" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                时间复杂度初步
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../divide/" class="md-footer__link md-footer__link--next" aria-label="下一页: 递归" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                递归
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
@@ -1510,7 +1519,7 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.instant", "navigation.sections", "navigation.expand", "navigation.top"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.instant", "navigation.sections", "navigation.expand", "navigation.footer", "navigation.top", "content.code.copy"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>

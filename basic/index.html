@@ -14,7 +14,7 @@
         <link rel="prev" href="../about/support/">
       
       
-        <link rel="next" href="how-to-train/">
+        <link rel="next" href="grammar/">
       
       <link rel="icon" href="../favicon.ico">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
@@ -523,15 +523,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#序" class="md-nav__link">
-    序
+  <a href="#算法竞赛怎么比" class="md-nav__link">
+    算法竞赛怎么比
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#试机题" class="md-nav__link">
-    试机题
+  <a href="#学习平台" class="md-nav__link">
+    学习平台
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acm-比赛考啥" class="md-nav__link">
+    ACM 比赛考啥
   </a>
   
 </li>
@@ -551,8 +558,22 @@
   
   
     <li class="md-nav__item">
-      <a href="how-to-train/" class="md-nav__link">
-        如何提升
+      <a href="grammar/" class="md-nav__link">
+        语法基础
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complexity/" class="md-nav__link">
+        时间复杂度初步
       </a>
     </li>
   
@@ -567,20 +588,6 @@
     <li class="md-nav__item">
       <a href="basic/" class="md-nav__link">
         算法思想
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="example/" class="md-nav__link">
-        优化例题
       </a>
     </li>
   
@@ -705,8 +712,8 @@
   
   
     <li class="md-nav__item">
-      <a href="end/" class="md-nav__link">
-        结语
+      <a href="how-to-train/" class="md-nav__link">
+        继续提升
       </a>
     </li>
   
@@ -1264,15 +1271,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#序" class="md-nav__link">
-    序
+  <a href="#算法竞赛怎么比" class="md-nav__link">
+    算法竞赛怎么比
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#试机题" class="md-nav__link">
-    试机题
+  <a href="#学习平台" class="md-nav__link">
+    学习平台
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acm-比赛考啥" class="md-nav__link">
+    ACM 比赛考啥
   </a>
   
 </li>
@@ -1297,24 +1311,57 @@
 
 
 <h1 id="简介">简介<a class="headerlink" href="#简介" title="Permanent link">⚓︎</a></h1>
-<p>一些名词的意义是自明的，比如模拟、搜索等，这些词就不再详加解释了。</p>
-<h2 id="序">序<a class="headerlink" href="#序" title="Permanent link">⚓︎</a></h2>
-<p>语言只是工具，如果没有好的算法，也无法解决问题。这里会介绍一些基本的算法知识。</p>
-<p>我挑选了一点题目，在每页的最下面。全部见 <a href="https://www.luogu.com.cn/training/70190">题目列表汇总</a>。</p>
-<p>部分内容来自于 <a href="https://oi-wiki.org/">OI-Wiki</a>，那里也有许多算法的介绍，感兴趣的可以看看。</p>
-<h2 id="试机题">试机题<a class="headerlink" href="#试机题" title="Permanent link">⚓︎</a></h2>
+<p>很高兴你能对算法竞赛感兴趣！接下来我将介绍一些入门资料。</p>
+<p>入门大致分为三步，先学习 C 语言的语法，于刷题中熟练，最后学习一些基础算法。</p>
+<h2 id="算法竞赛怎么比">算法竞赛怎么比<a class="headerlink" href="#算法竞赛怎么比" title="Permanent link">⚓︎</a></h2>
+<p>算法竞赛有多种赛制，不同赛制在资料携带、评测方式上有一定不同，但大都是在一定时限内解决算法问题。</p>
+<p>为了评判代码的正确性，题目会准备若干数量的测试数据，你的代码只有在规定的内存、时间限制下结束并返回正确结果，才会被认为是正确的。</p>
+<p>题目都会公开少量数据用于理解题意，称之样例。大部分题目都会隐藏后续的测试数据。因此你很有可能通过了样例，但无法通过全部的数据，所以被判为不通过。</p>
+<p>从上面可以看出，算法竞赛对代码能力要求极高，因此在学习算法的过程中一定要重视刷题。</p>
+<h2 id="学习平台">学习平台<a class="headerlink" href="#学习平台" title="Permanent link">⚓︎</a></h2>
+<p>通常来说，算法竞赛很少通过书籍来学习，因为网上到处是公开的资料。</p>
+<p>互联网上有很多的 OJ（Online Judge，在线评测系统），有数万道各种难度的题目。我们只需在 OJ 上进行提交，会立即返回评测结果。</p>
+<p>为了防止套取数据，从而写了一大堆 <code>if-else</code> 过题，大部分网站会对下载数据的频率做一定限制。部分 OJ 会随机打乱评测顺序。</p>
+<p>一般来说，返回结果有如下几种类型：</p>
 <ul>
-<li><a href="https://www.luogu.com.cn/problem/P1001">P1001 A+B Problem</a></li>
-<li><a href="https://www.luogu.com.cn/problem/P1047">P1047 校门外的树</a></li>
-<li><a href="https://www.luogu.com.cn/problem/P2181">P2181 对角线</a></li>
+<li>Accepted（AC），程序通过了所有数据，是正确的。</li>
+<li>Wrong Answer（WA），程序返回了错误的答案。</li>
+<li>Presentation Error（PE），程序输出含有格式错误。</li>
+<li>Time Limited Exceeded（TLE），程序未在规定的时间返回答案。</li>
+<li>Memory Limited Exceeded（MLE），程序使用了超出限制的内存。</li>
+<li>Runtime Error（RTE 或 RE），程序未能正常结束。</li>
+<li>Compile Error（CE），程序未能通过编译，无法运行。</li>
 </ul>
+<h2 id="acm-比赛考啥">ACM 比赛考啥<a class="headerlink" href="#acm-比赛考啥" title="Permanent link">⚓︎</a></h2>
+<p>算法竞赛一般全称程序设计竞赛，考察如何设计算法以解决题目，重点是解决问题的能力。</p>
+<blockquote>
+<p>高中也有算法竞赛，<a href="https://www.noi.cn/">NOI 全国青少年信息学奥林匹克竞赛</a>，五大竞赛之一，NOI 金牌可以获得清北的保送资格。很多高中参与过 OI 的学生大学会继续参加 ACM，因此差距会非常巨大，当你还为 <code>for/if</code> 等语法烦恼时，OIer 可能已经有 10 年代码经验了，刚入学便能够摘金夺银。但是也不必焦虑，只要努力，我们都有机会摘金夺银！</p>
+</blockquote>
+<p>网上很少有总结 ACM 到底是啥，就一句写题。这里谈谈我的理解。</p>
+<div class="admonition warning">
+<p class="admonition-title">常见误区</p>
+<p>很多不了解的人对算法竞赛有所误解，认为 ACM 类似知识竞赛，只要“博览”常见算法就能取得一个不错的成绩；也有人认为 ACM 只是对着一堆算法模版去照着敲，没多少创新，比的都是理解题目的能力。</p>
+<p>“会的算法多”不代表“竞赛能力强”。如果把算法比作轮子的话，算法比赛比的就是谁能拿轮子造出优秀的汽车。在刚学新算法时，题目要求你造的只是一辆独轮车，而比赛时选手需要造的有可能是一辆坦克。一味的增加轮子的种类数而不去训练造车的方法，是无法在比赛中拿到好成绩的。“算法竞赛”不是“算法数量大赛”。<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<p>重点是做题方法与思考能力，也就是常说的思维，而不是知识清单。这类似无招胜有招的道理。</p>
+</div>
+<p>算法竞赛更倾向于“设计”与“创造”。简而言之，你需要创造算法，而不是使用算法。</p>
+<p>算法竞赛有点研究的气质，可能与大家接触的工程相关画风很不一致。事实也确实如此，算法竞赛和学术界的联系比较紧密。</p>
+<p>竞赛界目前远落后于学术界，经常有选手研读并引入的论文里的算法。但在部分问题上，竞赛界也有一些领先，OI 国家集训队每年都会出一本 <a href="https://github.com/OI-wiki/libs/tree/master/集训队历年论文">论文集</a>，部分优秀论文可以发 <a href="https://drops.dagstuhl.de/opus/volltexte/2018/10043/">SOSA Paper</a>。也有很多算法选手会往计算机的理论方向发展，如 TCS（<a href="https://en.wikipedia.org/wiki/Theoretical_computer_science">Theoretical computer science</a>）和 PLT（<a href="https://en.wikipedia.org/wiki/Programming_language_theory">Programming language theory</a>）。</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>摘自 <a href="https://www.zhihu.com/question/391533687/answer/1194659474">您认为您最想告诉OI初学者的是什么？ - 扶苏的回答 - 知乎</a>。&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2022年12月30日</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年6月29日</span>
       
     
   </small>
@@ -1396,6 +1443,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../about/support/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 参与文档建设" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                参与文档建设
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="grammar/" class="md-footer__link md-footer__link--next" aria-label="下一页: 语法基础" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                语法基础
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
@@ -1444,7 +1529,7 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.instant", "navigation.sections", "navigation.expand", "navigation.top"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.instant", "navigation.sections", "navigation.expand", "navigation.footer", "navigation.top", "content.code.copy"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
       <script src="../assets/javascripts/bundle.fac441b0.min.js"></script>
