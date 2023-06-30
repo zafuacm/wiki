@@ -1,217 +1,222 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://zafuacm.github.io/wiki/</loc>
+         <loc>https://zafuacm.cn/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/SUMMARY/</loc>
+         <loc>https://zafuacm.cn/SUMMARY/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/about/faq/</loc>
+         <loc>https://zafuacm.cn/about/faq/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/about/history/</loc>
+         <loc>https://zafuacm.cn/about/history/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/about/honor/</loc>
+         <loc>https://zafuacm.cn/about/honor/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/about/introduction/</loc>
+         <loc>https://zafuacm.cn/about/introduction/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/about/join-us/</loc>
+         <loc>https://zafuacm.cn/about/join-us/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/about/support/</loc>
+         <loc>https://zafuacm.cn/about/support/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/basic/</loc>
+         <loc>https://zafuacm.cn/about/wechat/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/basic/basic/</loc>
+         <loc>https://zafuacm.cn/basic/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/basic/binary/</loc>
+         <loc>https://zafuacm.cn/basic/basic/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/basic/complexity/</loc>
+         <loc>https://zafuacm.cn/basic/binary/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/basic/divide/</loc>
+         <loc>https://zafuacm.cn/basic/complexity/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/basic/dp/</loc>
+         <loc>https://zafuacm.cn/basic/divide/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/basic/grammar/</loc>
+         <loc>https://zafuacm.cn/basic/dp/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/basic/greedy/</loc>
+         <loc>https://zafuacm.cn/basic/grammar/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/basic/how-to-train/</loc>
+         <loc>https://zafuacm.cn/basic/greedy/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/basic/prefix-sum/</loc>
+         <loc>https://zafuacm.cn/basic/how-to-train/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/basic/quick-pow/</loc>
+         <loc>https://zafuacm.cn/basic/prefix-sum/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/basic/recursion/</loc>
+         <loc>https://zafuacm.cn/basic/quick-pow/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/basic/sort/</loc>
+         <loc>https://zafuacm.cn/basic/recursion/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/math/</loc>
+         <loc>https://zafuacm.cn/basic/sort/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/math/crt/</loc>
+         <loc>https://zafuacm.cn/math/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/math/dirichlet/</loc>
+         <loc>https://zafuacm.cn/math/crt/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/math/game-theory/</loc>
+         <loc>https://zafuacm.cn/math/dirichlet/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/math/sieve/</loc>
+         <loc>https://zafuacm.cn/math/game-theory/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/math/multiplicative-function/</loc>
+         <loc>https://zafuacm.cn/math/sieve/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/math/multiplicative-function/min25/</loc>
+         <loc>https://zafuacm.cn/math/multiplicative-function/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/math/multiplicative-function/pn/</loc>
+         <loc>https://zafuacm.cn/math/multiplicative-function/min25/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/math/multiplicative-function/zhouge/</loc>
+         <loc>https://zafuacm.cn/math/multiplicative-function/pn/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/math/poly/</loc>
+         <loc>https://zafuacm.cn/math/multiplicative-function/zhouge/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/math/poly/convolution/</loc>
+         <loc>https://zafuacm.cn/math/poly/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/math/poly/fft/</loc>
+         <loc>https://zafuacm.cn/math/poly/convolution/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/math/poly/newton/</loc>
+         <loc>https://zafuacm.cn/math/poly/fft/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/other/</loc>
+         <loc>https://zafuacm.cn/math/poly/newton/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/other/english/</loc>
+         <loc>https://zafuacm.cn/other/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/other/markdown/</loc>
+         <loc>https://zafuacm.cn/other/english/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/other/mkdocs/</loc>
+         <loc>https://zafuacm.cn/other/markdown/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/string/</loc>
+         <loc>https://zafuacm.cn/other/mkdocs/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/string/minimal-string/</loc>
+         <loc>https://zafuacm.cn/string/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/struct/</loc>
+         <loc>https://zafuacm.cn/string/minimal-string/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/struct/fenwick-tree/</loc>
+         <loc>https://zafuacm.cn/struct/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zafuacm.github.io/wiki/struct/sparse-table/</loc>
+         <loc>https://zafuacm.cn/struct/fenwick-tree/</loc>
+         <lastmod>2023-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://zafuacm.cn/struct/sparse-table/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
