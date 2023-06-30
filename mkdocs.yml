@@ -84,7 +84,7 @@ extra:
     - icon: fontawesome/solid/paper-plane
       link: mailto:rogeryoungh@foxmail.com
   analytics:
-    provider: google
+    provider: custom
     property: G-2ZJJQNKSP7
 
 
