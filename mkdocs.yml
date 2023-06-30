@@ -83,6 +83,10 @@ extra:
       link: https://github.com/zafuacm
     - icon: fontawesome/solid/paper-plane
       link: mailto:rogeryoungh@foxmail.com
+  analytics:
+    provider: google
+    property: G-2ZJJQNKSP7
+
 
 
 extra_javascript:
