@@ -1,5 +1,5 @@
 site_name: ZAFU ACM Wiki
-site_url: https://zafuacm.github.io/wiki
+site_url: https://zafuacm.cn
 
 theme:
   name: material
@@ -84,7 +84,7 @@ extra:
     - icon: fontawesome/solid/paper-plane
       link: mailto:rogeryoungh@foxmail.com
   analytics:
-    provider: google
+    provider: custom
     property: G-2ZJJQNKSP7
 
 
@@ -105,6 +105,7 @@ nav:
     - 常见问题: about/faq.md
     - 队员风采: about/honor.md
     - 参与文档建设: about/support.md
+    - 公众号: about/wechat.md
   - 基础:
     - 简介: basic/index.md
     - 语法基础: basic/grammar.md

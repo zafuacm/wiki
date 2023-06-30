@@ -17,6 +17,10 @@ comments: true
 
 更多成绩见 [往年成绩](./about/history.md)。
 
+## 特别鸣谢
+
+特别鸣谢王鑫益学长赞助的 zafuacm.cn 域名！
+
 ## 照片
 
 ![img3](./about/img/img3.png)
