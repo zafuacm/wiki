@@ -45,6 +45,10 @@ int query(int x, int y) {
 }
 ```
 
+## 参考资料
+
+- [ST 表 - OIWiki](https://oi-wiki.org/ds/sparse-table/)。
+
 ## 练习
 
 - [P3865 【模板】ST 表](https://www.luogu.com.cn/problem/P3865)

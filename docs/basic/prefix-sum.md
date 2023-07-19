@@ -17,17 +17,17 @@ comments: true
 肯定是正着跳，暴力也是显然的，对结果取 $\max$。复杂度为 $O(n^2)$。
 
 ```cpp
-int aa[MAXN], n;
+int aa[N], n;
 int ans = 0x3f3f3f3f;
 for (int i = 0; i < n - 1; i++) {
-    int sum = 0;
-    for (int j = 0; j < i; j++) {
-        sum += aa[j];
-    }
-    for (int j = i + k; j < n - 1; j++) {
-        sum += aa[j];
-    }
-    ans = min(ans, sum);
+  int sum = 0;
+  for (int j = 0; j < i; j++) {
+    sum += aa[j];
+  }
+  for (int j = i + k; j < n - 1; j++) {
+    sum += aa[j];
+  }
+  ans = min(ans, sum);
 }
 return ans;
 ```
@@ -39,12 +39,12 @@ return ans;
 怎么求和更快呢？这就需要用前缀和优化了。考虑预处理数组 $a$ 的前缀和 $s_i = \displaystyle\sum_{k=1}^ia_k$
 
 ```cpp
-int aa[MAXN], ss[MAXN];
+int aa[N], ss[N];
 // init...
 int sum = 0;
 for (int i = 0; i < n - 1; i++) {
-    sum += aa[i];
-    ss[i] = sum;
+  sum += aa[i];
+  ss[i] = sum;
 }
 ```
 
@@ -54,12 +54,12 @@ for (int i = 0; i < n - 1; i++) {
 
 ```cpp
 
-int aa[MAXN], n, ss[MAXN];
+int aa[N], n, ss[N];
 // init...
 int ans = 0x3f3f3f3f;
 for (int i = 0; i < n - 1; i++) {
-    int sum = ss[i - 1] + s[n - 2] - s[i + k -1];
-    ans = min(ans, sum);
+  int sum = ss[i - 1] + s[n - 2] - s[i + k -1];
+  ans = min(ans, sum);
 }
 ```
 
@@ -77,11 +77,11 @@ for (int i = 0; i < n - 1; i++) {
 // init...
 int tsum = 0;
 for (int i = 0; i < k; i++)
-    tsum += aa[i];
+  tsum += aa[i];
 int ans = tsum;
 for (int i = k; i < n - 1; i++) {
-    tsum = tsum + aa[i] - aa[i - k];
-    ans = max(ans, t);
+  tsum = tsum + aa[i] - aa[i - k];
+  ans = max(ans, t);
 }
 return sum - ans;
 ```
@@ -94,11 +94,11 @@ return sum - ans;
 
 差分可以把“区间增加”变成“单点增加”。详细见 [P2367 语文成绩](https://www.luogu.com.cn/problem/P2367)。
 
+## 参考资料
+
+- [前缀和 & 差分 - OIWiki](https://oi-wiki.org/basic/prefix-sum/)。
+
 ## 例题
 
 - [P5638 光骓者的荣耀](https://www.luogu.com.cn/problem/P5638)
 - [P2367 语文成绩](https://www.luogu.com.cn/problem/P2367)
-
-## 扩展 · 二维前缀和
-
-## 扩展 · 高维前缀和
