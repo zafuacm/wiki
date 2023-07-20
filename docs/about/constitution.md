@@ -28,19 +28,13 @@
 
     - 在新生赛中取得前 16 名。
 
-2. 在 codeforce 平台近一个月有比赛记录的任意一场 rated 场次 rating 达到一定分数。
+2. 在 [codeforces](https://codeforces.com/) 平台近一个月有比赛记录的任意一场 rated 场次 rating 达到一定分数。
 
     - 大一达到 1200 分。
 
     - 非大一达到 1500 分。
 
-3. 在 atcoder 平台近一个月有比赛记录的任意一场 rated 场次 rating 达到一定分数。
-
-    - 大一达到 700 分。
-
-    - 非大一达到 1000 分。
-
-4. 写完[入门题单](https://vjudge.net/article/3299)（男生 150 题，女生 120 题） 
+3. 写完[入门题单](https://vjudge.net/article/3299)男生 150 题，女生 120 题）。
 
 ## 第三章 训练管理
 
