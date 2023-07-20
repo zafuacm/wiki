@@ -16,7 +16,7 @@ comments: true
 
 ### 入队资格获取方式
 
-我们推荐写入门题单获取入队资格，其他获取方式见 [集训队章程队员选拔章节](./constitution.md##第二章-队员选拔)。
+我们推荐写入门题单获取入队资格，其他获取方式见 [集训队章程队员选拔章节](./constitution.md#第二章-队员选拔)。
 
 因为 HDOJ 最近关停次数较多，我们切换到 AtCoder Training 300。[题单链接](https://vjudge.net/article/3299)。
 
@@ -45,9 +45,7 @@ comments: true
 
     2. codeforce 用户名：xxx。
 
-    3. Atcoder 用户名：xxx。
-
-    4. Vjudge 用户名：xxx。
+    3. Vjudge 用户名：xxx。
 
 - 第二部分 申请内容（200 字及以上）
 
