@@ -72,7 +72,7 @@ plugins:
       count_empty_lines: true
       fallback_to_empty: false
 
-copyright: <p>Copyright 2020 - 2022 ZAFU ACM Team</p><p><a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备17046339号</a></p>
+copyright: Copyright 2020 - 2022 ZAFU ACM Team<br><a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备17046339号-2</a>
 repo_url: https://github.com/zafuacm/wiki
 repo_name: zafuacm/wiki
 edit_uri: edit/main/docs/
