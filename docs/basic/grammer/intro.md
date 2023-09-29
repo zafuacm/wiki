@@ -2,38 +2,42 @@
 comments: true
 ---
 
-# 语法基础
+# 语法学习
 
 关于如何入门 C 语言，网上已经有了丰富的资料，我们这里做一些资料推荐。
 
-## 环境配置
-
-在未入门编程的情况下，最好使用一些傻瓜式的集成环境。
-
-假如您使用 Windows，我推荐 [小熊猫 C++](https://royqh1979.gitee.io/redpandacpp/)；假如是 macOS，您可以尝试 [XCode](https://oi-wiki.org/tools/editor/xcode/)。如果是 Linux 等其他系统，您可以向身边的专家请教。
-
-使用教程：<https://www.bilibili.com/video/av860184539>。
-
-```c
-#include <stdio.h>
-
-int main() {
-  printf("hello world!\n");
-  return 0;
-}
-```
-
-假如你能够成功的编译运行这份代码，你的环境配置就成功了。
-
 ## 资料推荐
 
-假如喜欢看听课学习，我推荐 bilibili 平台上的 [浙江大学翁恺教你C语言程序设计！C语言基础入门！](https://www.bilibili.com/video/av768150164)。
+假如您喜欢看听课学习，我推荐以下课程：
 
-假如喜欢看书，可以尝试 [C 程序设计语言](https://book.douban.com/subject/1139336/)。注意远离谭浩强。
+- 浙江大学翁恺的《C语言程序设计》，可以在 [mooc](https://www.icourse163.org/course/0809ZJU007A-199001) 上收看。[bilibili](https://www.bilibili.com/video/av768150164) 上可能是转载，不清楚更新是否及时。
 
-## 良好格式
+假如喜欢看书，我推荐以下书籍：
 
-C 语言中，空格、换行等在很多位置不影响代码表现，因此可以把 Hello World 写的多种多样：
+- [C 语言程序设计：现代方法（第二版修订版）](https://book.douban.com/subject/35503091/)，修订版还与时俱进地增加了 C11 和 C18 中的内容。
+- [C Primer Plus](https://book.douban.com/subject/26792521/)，经典老书。
+- [C 程序设计语言](https://book.douban.com/subject/1139336/)，作者是 C 语言之父，可能不适合初学者阅读。
+
+特别注意远离谭浩强的 [C 程序设计](https://book.douban.com/subject/30385709/)。
+
+## 补充内容
+
+在此补充一些书籍可能不做介绍的内容。
+
+### 提问的智慧
+
+提问需要一定的技巧，阅读 [提问的技巧 - LUG @ USTC](https://lug.ustc.edu.cn/wiki/doc/smart-questions) 可以帮助你的问题获得关注。
+
+以下列举几个蠢问题：
+
+- 问一个搜索一下就能得到答案的问题；
+- 问“这个代码为什么报错”但只发代码不发报错信息的；
+- 问“这个代码为什么不对” 但只发代码不发结果的；
+- [提问的技巧](https://lug.ustc.edu.cn/wiki/doc/smart-questions/#%E4%B8%8D%E8%AF%A5%E9%97%AE%E7%9A%84%E9%97%AE%E9%A2%98) 中不该问的问题、好问题与蠢问题一节。
+
+### 良好格式
+
+C 语言非常灵活，过于聪明的程序员可以编写出除了他们自己之外没人能读懂的程序。在 C 语言中，空格、换行等在很多位置不影响代码表现，因此可以把 Hello World 写的多种多样：
 
 ```c
 #include<stdio.h>
@@ -61,11 +65,22 @@ return 0;}
 int main(){printf("hello world!\n");return 0;}
 ```
 
+再比如国际模糊 C 代码大赛的 1990 年的“最佳小程序”：
+
+```c
+v,i,j,k,l,s,a[99];
+main()
+{
+	for(scanf("%d",&s);*a-s;v=a[j*=v]-a[i],k=i<s,j+=(v=j<s&&(!k&&!!printf(2+"\n\n%c"-(!l<<!j)," #Q"[l^v?(l^j)&1:2])&&++l||a[i]<s&&v&&v-i+j&&v+i-j))&&!(l%=s),v||(i==j?a[i+=k]=0:++a[i])>=s*k&&++a[--i])
+		;
+}
+```
+
 这几份代码都能够成功运行，但显然可读性大大降低。在请求他人帮助时，**将代码格式化是一种礼貌**，否则就是在折磨别人的眼睛。
 
 有很多在线格式化工具，比如 [Code Formatter and Code Beautifier](https://formatter.org/)。
 
-## 代码剪切板
+### 代码剪切板
 
 很多时候，光盯着代码看很难看出问题，需要上手跑一跑。
 
