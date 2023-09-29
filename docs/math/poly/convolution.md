@@ -69,7 +69,7 @@ $$
 (f \ast g)(x) = \sum_{d \mid x} f(d) g\left(\frac{x}{d}\right) = \sum_{ab=x}f(a)g(b)
 $$
 
-在 Mobius 反演中有重要应用。详见 [Dirichlet 卷积](../dirichlet/)。
+在 Mobius 反演中有重要应用。详见 [Dirichlet 卷积](../dirichlet.md)。
 
 ## 快速加法
 

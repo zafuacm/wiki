@@ -289,7 +289,7 @@ void intt(iter f, int n) {
 
 ## 应用
 
-FFT 是卷积计算的基础工具。更多应用见 [卷积](../convolution/)。
+FFT 是卷积计算的基础工具。更多应用见 [卷积](convolution.md)。
 
 ## 练习
 

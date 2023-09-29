@@ -9,7 +9,7 @@ theme:
     - navigation.tabs
     # - navigation.indexes
     - navigation.instant
-    - navigation.sections
+    # - navigation.sections
     - navigation.expand
     - navigation.footer
     - navigation.top
@@ -99,27 +99,31 @@ extra_css:
 nav:
   - 关于:
     - 主页: index.md
-    - 集训队简介: about/introduction.md
-    - 集训队章程: about/constitution.md
-    - 如何加入: about/join-us.md
-    - 往年竞赛成绩: about/history.md
-    - 常见问题: about/faq.md
-    - 队员风采: about/honor.md
-    - 参与文档建设: about/support.md
-    - 公众号: about/wechat.md
+    - 宣传窗:
+      - 集训队简介: about/introduction.md
+      - 如何加入: about/join-us.md
+      - 队员风采: about/honor.md
+      - 公众号: about/wechat.md
+    - 集训队信息:
+      - 集训队章程: about/constitution.md
+      - 往年竞赛成绩: about/history.md
+      - 常见问题: about/faq.md
+      - 参与文档建设: about/support.md
   - 基础:
     - 简介: basic/index.md
-    - 语法基础: basic/grammar.md
-    - 时间复杂度初步: basic/complexity.md
-    - 算法思想: basic/basic.md
-    - 递归: basic/divide.md
-    - 二分: basic/binary.md
-    - 贪心: basic/greedy.md
-    - 排序: basic/sort.md
-    - 递推初步: basic/recursion.md
-    - 动态规划: basic/dp.md
-    - 前缀和 & 差分: basic/prefix-sum.md
-    - 快速幂: basic/quick-pow.md
+    - 语法基础:
+      - 环境配置: basic/grammer/enviroment.md
+      - 语法学习: basic/grammer/intro.md
+    - 算法基础:
+      - 序: basic/basic.md
+      - 复杂度: basic/complexity.md
+      - 递归: basic/divide.md
+      - 二分: basic/binary.md
+      - 贪心: basic/greedy.md
+      - 递推初步: basic/recursion.md
+      - 动态规划: basic/dp.md
+      - 前缀和 & 差分: basic/prefix-sum.md
+      - 快速幂: basic/quick-pow.md
     - 继续提升: basic/how-to-train.md
   - 字符串:
     - 简介: string/index.md
@@ -148,3 +152,4 @@ nav:
     - 简介: other/index.md
     - Markdown: other/markdown.md
     - MkDocs: other/mkdocs.md
+  - OJ: https://oj.zafuacm.cn/
