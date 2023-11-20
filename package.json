@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "katex": "^0.16.9",
+    "markdown-it-footnote": "^3.0.3",
+    "markdown-it-mathjax3": "^4.3.2",
+    "vitepress": "1.0.0-rc.29"
+  },
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  }
+}

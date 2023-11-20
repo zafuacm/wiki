@@ -1,26 +1,58 @@
 ---
-comments: true
+# https://vitepress.dev/reference/default-theme-home-page
+layout: home
+
+hero:
+  name: "ZAFU ACM"
+  text: "浙农林 ACM 集训队"
+  tagline: Choose the ZAFU, Choose the ACM.
+  image:
+    src: /icpc.png
+    alt: icpc
+  actions:
+    - theme: brand
+      text: 算竞，启动！
+      link: /basic/
+    - theme: alt
+      text: 关于我们
+      link: /about/introduction
+
+features:
+  - icon: 😎
+    title: 我们是？
+    details: 我们是浙江农林大学 ACM 集训队，为同学们提供算法交流、训练平台，多次代表学校出征程序设计竞赛（ICPC/CCPC、浙江省赛、蓝桥杯等）。
+  - icon: 🚀
+    title: 我们氛围超棒
+    details: 承担队内管理职责的均为本科学长学姐，氛围相当自由。很多队员最终拿到了大厂 Offer，也有很多队员考研到浙大等名校。
+  - icon: 🎉
+    title: 欢迎加入我们
+    details: 我们随时欢迎感兴趣的同学加入我们！QQ：ACM 协会大群 628253675，2023 迎新群 692943231。
 ---
 
-# 浙江农林大学 ACM 集训队官方网站
+<!-- From `https://github.com/vuejs/vitepress/blob/main/docs/index.md` -->
 
-我们是浙江农林大学 ACM 集训队，为同学们提供算法交流、训练平台，多次代表学校出征程序设计竞赛，近年屡获国家级金奖。
+<style>
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
 
-训练基地位于学 10 一楼侧，有一块蓝色大招牌。
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe50 50%, #47caff50 50%);
+  --vp-home-hero-image-filter: blur(44px);
+}
 
-这里有 ZAFU 集训队相关介绍、规章制度、宣传、历史成绩等资料，也有集训队内教学文档。
+:root.dark {
+  --vp-home-hero-image-background-image: none;
+}
 
-## 近年战绩
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
 
-- 2022 赛季，XCPC 区域赛 1 金 3 银 7 铜。
-- 2022 蓝桥杯，国一 2 人、国二 9 人、国三 3 人，其中大一 2 人。
-
-更多成绩见 [往年成绩](./about/history.md)。
-
-## 特别鸣谢
-
-特别鸣谢王鑫益学长赞助的 zafuacm.cn 域名！
-
-## 照片
-
-![img3](./about/img/img3.png)
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
+}
+</style>

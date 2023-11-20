@@ -1,2 +1,11 @@
 book/
 site/
+
+# Dependency directories
+node_modules/
+
+# vitepress build output
+/docs/.vitepress/dist/
+
+# vitepress cache directory
+/docs/.vitepress/cache/
