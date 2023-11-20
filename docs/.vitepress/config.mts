@@ -111,7 +111,7 @@ function sidebarItems(): DefaultTheme.Sidebar {
         items: [
           { text: '环境配置', link: '/basic/grammer/enviroment' },
           { text: '语法学习', link: '/basic/grammer/intro' },
-          { text: 'Markdown', link: '/basic/markdown' }
+          { text: 'Markdown', link: '/basic/grammer/markdown' }
         ]
       },
       {
