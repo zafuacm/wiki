@@ -14,7 +14,7 @@ comments: true
 
 请您在撰稿或者修正以前，仔细阅读以下内容，以帮助您完成更高质量的内容。
 
-需要了解一些 Markdown 的知识，请查看 [Markdown](../other/markdown.md)。
+需要了解一些 Markdown 的知识，请查看 [Markdown](../basic/grammer/markdown.md)。
 
 ## 我之前没怎么用过 GitHub
 
