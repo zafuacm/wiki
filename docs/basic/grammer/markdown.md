@@ -6,7 +6,7 @@ comments: true
 
 我推荐 Markdown，因为它足够流行，足够简单。
 
-本文讲介绍一些 Markdown 的基础文法，MkDocs 独有的特性请阅读 [MkDocs](mkdocs.md)。
+本文讲介绍一些 Markdown 的基础文法。
 
 更详细的请阅读 [Cyent](https://cyent.github.io/markdown-with-mkdocs-material/syntax/main/)。
 
