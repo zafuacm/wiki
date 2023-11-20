@@ -117,87 +117,87 @@ int f(int n) {
 
 为了让递归过程更利于理解，我们让代码输出了调试信息，可以在运行中理解。
 
-=== "核心代码"
+::: code-group
 
-    ```cpp
-    #include <stdio.h>
-    
-    const int N = 25;
-    int perm[N];
-    
-    void dfs(int i, int n) {
-      if (i == n + 1) {       // 枚举完成
-        for (int j = 1; j <= n; ++j) {
-          printf("%d%c", perm[j], " \n"[j == n]);
-        }
-      } else {                // 继续枚举
-        for (int j = 1; j <= n; ++j) {
-          if (perm[j] == 0) { // 位置 j 还未填写数字
-            perm[j] = i;      // 枚举为 i
-            dfs(i + 1, n);    // 继续递归
-            perm[j] = 0;      // 撤销修改，即回溯
-          }
-        }
+```cpp [核心代码]
+#include <stdio.h>
+
+const int N = 25;
+int perm[N];
+
+void dfs(int i, int n) {
+  if (i == n + 1) {       // 枚举完成
+    for (int j = 1; j <= n; ++j) {
+      printf("%d%c", perm[j], " \n"[j == n]);
+    }
+  } else {                // 继续枚举
+    for (int j = 1; j <= n; ++j) {
+      if (perm[j] == 0) { // 位置 j 还未填写数字
+        perm[j] = i;      // 枚举为 i
+        dfs(i + 1, n);    // 继续递归
+        perm[j] = 0;      // 撤销修改，即回溯
       }
     }
-    
-    int main() {
-      int n = 3;
-      dfs(1, n);
-    }
-    ```
+  }
+}
 
-=== "调试输出"
+int main() {
+  int n = 3;
+  dfs(1, n);
+}
+```
 
-    ```cpp
-    #include <stdio.h>
-    
-    const int N = 25;
-    int perm[N];
-    
-    // 调试输出
-    
-    void info(int n) {
-      printf("[debug] ");
-      for (int i = 0; i < n; ++i) printf("  ");
-    }
-    
-    void output(int n) {
-      printf("perm = ");
-      for (int j = 1; j <= n; ++j) {
-        printf("%d%c", perm[j], " \n"[j == n]);
+```cpp [调试代码]
+#include <stdio.h>
+
+const int N = 25;
+int perm[N];
+
+// 调试输出
+
+void info(int n) {
+  printf("[debug] ");
+  for (int i = 0; i < n; ++i) printf("  ");
+}
+
+void output(int n) {
+  printf("perm = ");
+  for (int j = 1; j <= n; ++j) {
+    printf("%d%c", perm[j], " \n"[j == n]);
+  }
+}
+
+// 核心代码
+
+void dfs(int i, int n) {
+  // 假设枚举到第 i 位，总共 n 位
+  info(i), printf("进入 dfs(i = %d, n = %d)\n", i, n);
+  info(i), output(n);  // 输出排列
+  if (i == n + 1) {
+    info(i), printf("枚举完成\n");
+    output(n);  // 输出排列
+  } else {
+    info(i), printf("还有空位\n");
+    for (int j = 1; j <= n; ++j) {
+      if (perm[j] == 0) {  // 位置 j 还未填写数字
+        info(i), printf("填写 perm[%d] = %d\n", j, i);
+        perm[j] = i;
+        dfs(i + 1, n);
+        info(i), printf("清除 perm[%d] = 0\n", j);
+        perm[j] = 0;
       }
     }
-    
-    // 核心代码
-    
-    void dfs(int i, int n) {
-      // 假设枚举到第 i 位，总共 n 位
-      info(i), printf("进入 dfs(i = %d, n = %d)\n", i, n);
-      info(i), output(n);  // 输出排列
-      if (i == n + 1) {
-        info(i), printf("枚举完成\n");
-        output(n);  // 输出排列
-      } else {
-        info(i), printf("还有空位\n");
-        for (int j = 1; j <= n; ++j) {
-          if (perm[j] == 0) {  // 位置 j 还未填写数字
-            info(i), printf("填写 perm[%d] = %d\n", j, i);
-            perm[j] = i;
-            dfs(i + 1, n);
-            info(i), printf("清除 perm[%d] = 0\n", j);
-            perm[j] = 0;
-          }
-        }
-      }
-      info(i), printf("离开 dfs(i = %d, n = %d)\n", i, n);
-    }
-    
-    int main() {
-      int n = 3;
-      dfs(1, n);
-    }
-    ```
+  }
+  info(i), printf("离开 dfs(i = %d, n = %d)\n", i, n);
+}
+
+int main() {
+  int n = 3;
+  dfs(1, n);
+}
+```
+
+:::
 
 另一个回溯法的经典问题是 $N$ 皇后，网上资料很多。这里有一份 [可视化](https://www.cs.usfca.edu/~galles/visualization/RecQueens.html)。
 
