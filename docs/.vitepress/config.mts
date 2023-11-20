@@ -54,7 +54,7 @@ export default defineConfig({
           { text: '字符串', link: '/string/index', },
           { text: '数学', link: '/math/index', },
           { text: '数据结构', link: '/struct/index', },
-          { text: '杂项', link: '/other/index' },]
+        ]
       },
       { text: '竞赛成绩', link: '/about/history' },
       {
@@ -111,7 +111,7 @@ function sidebarItems(): DefaultTheme.Sidebar {
         items: [
           { text: '环境配置', link: '/basic/grammer/enviroment' },
           { text: '语法学习', link: '/basic/grammer/intro' },
-          { text: 'Markdown', link: '/other/markdown' }
+          { text: 'Markdown', link: '/basic/markdown' }
         ]
       },
       {
@@ -193,13 +193,5 @@ function sidebarItems(): DefaultTheme.Sidebar {
         ]
       }
     ],
-    '/other/': [
-      {
-        text: '杂项',
-        items: [
-          { text: 'markdown', link: '/other/markdown'}
-        ]
-      }
-    ]
   }
 }
