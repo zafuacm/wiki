@@ -47,11 +47,33 @@ export default defineConfig({
 
     nav: [
       { text: '首页', link: '/' },
-      { text: '基础', link: '/basic/' },
-      { text: '字符串', link: '/string/' },
-      { text: '数学', link: '/math/' },
-      { text: '数据结构', link: '/struct/' },
-      { text: '关于', link: '/about/introduction' },
+      {
+        text: '学习资源',
+        items: [
+          { text: '基础', link: '/basic/index', },
+          { text: '字符串', link: '/string/index', },
+          { text: '数学', link: '/math/index', },
+          { text: '数据结构', link: '/struct/index', },
+          { text: '杂项', link: '/other/index' },]
+      },
+      { text: '队员风采', link: '/about/honor' },
+      { text: '竞赛成绩', link: '/about/history' },
+      { text: '加入我们', link: '/about/join-us' },
+      {
+        text: '关于集训队',
+        items: [
+          { text: '集训队简介', link: '/about/introduction' },
+          { text: '集训队章程', link: '/about/constitution' }
+
+        ]
+      },
+      {
+        text: '其他', items: [
+          { text: '参与文档建设', link: '/about/support' },
+          { text: '公众号', link: '/about/wechat' },
+          { text: '常见问题', link: '/about/faq' },
+        ]
+      },
       { text: 'OJ', link: 'https://oj.zafuacm.cn/' }
     ],
 
@@ -177,6 +199,14 @@ function sidebarItems(): DefaultTheme.Sidebar {
           { text: '简介', link: '/struct/' },
           { text: '树状数组', link: '/struct/fenwick-tree' },
           { text: 'ST 表', link: '/struct/sparse-table' }
+        ]
+      }
+    ],
+    '/other/': [
+      {
+        text: '杂项',
+        items: [
+          { text: 'markdown', link: '/other/markdown'}
         ]
       }
     ]
