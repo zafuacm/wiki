@@ -56,9 +56,7 @@ export default defineConfig({
           { text: '数据结构', link: '/struct/index', },
           { text: '杂项', link: '/other/index' },]
       },
-      { text: '队员风采', link: '/about/honor' },
       { text: '竞赛成绩', link: '/about/history' },
-      { text: '加入我们', link: '/about/join-us' },
       {
         text: '关于集训队',
         items: [
