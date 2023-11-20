@@ -67,13 +67,6 @@ export default defineConfig({
 
         ]
       },
-      {
-        text: '其他', items: [
-          { text: '参与文档建设', link: '/about/support' },
-          { text: '公众号', link: '/about/wechat' },
-          { text: '常见问题', link: '/about/faq' },
-        ]
-      },
       { text: 'OJ', link: 'https://oj.zafuacm.cn/' }
     ],
 
