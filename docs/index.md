@@ -6,6 +6,9 @@ hero:
   name: "ZAFU ACM"
   text: "浙农林 ACM 集训队"
   tagline: Choose the ZAFU, Choose the ACM.
+  image:
+    src: /icpc.png
+    alt: icpc
   actions:
     - theme: brand
       text: 算竞，启动！
@@ -33,8 +36,12 @@ features:
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
 
-  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe50 50%, #47caff50 50%);
   --vp-home-hero-image-filter: blur(44px);
+}
+
+:root.dark {
+  --vp-home-hero-image-background-image: none;
 }
 
 @media (min-width: 640px) {

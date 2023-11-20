@@ -43,6 +43,8 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
+    logo: '/favicon.ico',
+
     nav: [
       { text: '首页', link: '/' },
       { text: '基础', link: '/basic/' },
