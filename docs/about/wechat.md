@@ -6,6 +6,10 @@
 
 ## 2023 年
 
+- [2023-11-25 我校学子在中国大学生程序设计竞赛中斩获一银一铜的佳绩(女生组)](https://mp.weixin.qq.com/s/kR1b6tFUQf9-wKQ6QYxAXw)
+- [2023-11-15 关于举办浙江农林大学2023年蓝桥杯校内选拔赛的通知](https://mp.weixin.qq.com/s/0CSHxq2lJ2QzIHseNA6q4g)
+- [2023-10-07 浙江农林大学2023 ICPC国际大学生程序设计竞赛校赛选拔赛举行通知](https://mp.weixin.qq.com/s/RmZPXCop8wLVb4FQn1d1Dw)
+- [2023-09-01 开学必备！文心一言，你的智能学习助手上线了](https://mp.weixin.qq.com/s/gn8hF_T3t9jhOSjxTfiI-A)
 - [2023-06-29 强者来袭-事业篇](https://mp.weixin.qq.com/s/k3xfNS9T9fKmSYf8Oi5Faw)
 - [2023-06-26 强者来袭-考研篇（10）](https://mp.weixin.qq.com/s/AgKhKRjWNjePAJvrG8Dq2w)
 - [2023-06-25 强者来袭-考研篇（9）](https://mp.weixin.qq.com/s/Sv-dk5piKRDlU-VBms2gtQ)
