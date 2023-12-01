@@ -103,7 +103,7 @@ function sidebarItems(): DefaultTheme.Sidebar {
         text: '序',
         items: [
           { text: '序', link: '/basic/' },
-          { text: '简介', link: '/basic/intro' }
+          { text: '简介', link: '/basic/intro' },
         ]
       },
       {
@@ -125,7 +125,8 @@ function sidebarItems(): DefaultTheme.Sidebar {
           { text: '递推初步', link: '/basic/recursion' },
           { text: '动态规划', link: '/basic/dp' },
           { text: '前缀和 & 差分', link: '/basic/prefix-sum' },
-          { text: '快速幂', link: '/basic/quick-pow' }
+          { text: '快速幂', link: '/basic/quick-pow' },
+          { text: '继续提升', link: '/basic/how-to-train' }
         ]
       }
     ],
