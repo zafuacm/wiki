@@ -4,7 +4,7 @@
 
 ## 2023-2024 赛季
 
-ICPC 共计 1 金 1 银 3 铜，CCPC 共计 1 银 1 铜。
+ICPC 共计 1 金 1 银 2 铜，CCPC 共计 1 银 1 铜。
 
 ### [2023-12-10 ICPC 杭州](https://board.xcpcio.com/icpc/48th/hangzhou)
 
