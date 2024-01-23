@@ -6,6 +6,12 @@
 
 ICPC 共计 1 金 1 银 2 铜，CCPC 共计 1 银 1 铜。
 
+### [2024-01-13 ICPC EC Final](https://board.xcpcio.com/icpc/48th/ecfinal)
+
+| 队伍               | 队员                   | 奖项 | 排名 |
+| :----------------- | :--------------------- | :--- | :--- |
+| 这个彬彬交题超勇的 | 倪铂涵、朱蕴仪、王健彬 |      | 100  |
+
 ### [2023-12-10 ICPC 杭州](https://board.xcpcio.com/icpc/48th/hangzhou)
 
 | 队伍               | 队员                   | 奖项 | 排名 |
