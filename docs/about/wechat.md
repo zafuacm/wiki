@@ -6,6 +6,9 @@
 
 ## 2023 年
 
+- [2023-12-20 我校学子在中国大学生程序设计竞赛中获得铜奖和银奖的佳绩](https://mp.weixin.qq.com/s/0pxycLY4v2yMVhCdQaZl_g)
+- [2023-12-17 关于举办浙江农林大学2023年ACM新生杯的通知](https://mp.weixin.qq.com/s/OdYATvzKet9Gfv80PL6z9g)
+- [2023-12-01 浙江农林大学ICPC校内选拔赛采访](https://mp.weixin.qq.com/s/rkYQ5Dz5k9vaG7tvgpjxSA)
 - [2023-11-25 我校学子在中国大学生程序设计竞赛中斩获一银一铜的佳绩(女生组)](https://mp.weixin.qq.com/s/kR1b6tFUQf9-wKQ6QYxAXw)
 - [2023-11-15 关于举办浙江农林大学2023年蓝桥杯校内选拔赛的通知](https://mp.weixin.qq.com/s/0CSHxq2lJ2QzIHseNA6q4g)
 - [2023-10-07 浙江农林大学2023 ICPC国际大学生程序设计竞赛校赛选拔赛举行通知](https://mp.weixin.qq.com/s/RmZPXCop8wLVb4FQn1d1Dw)
