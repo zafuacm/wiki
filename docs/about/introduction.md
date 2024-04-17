@@ -36,7 +36,7 @@ ACM 集训队主要训练并参加 ICPC、CCPC 和浙江省赛，其他比赛如
 | [ICPC](https://icpc.global/)                            | 国家级一类，团体        | 与 CCPC 合称 XCPC          |
 | [CCPC](https://ccpc.io/)                                | 国家级二类，团体        | 与 ICPC 类似，主办单位不同 |
 | ICPC 邀请赛                                             | 国家级一类，团体        | 非区域赛系列               |
-| 浙江省赛                                                | 省部级一类，个人        |                            |
+| 浙江省赛                                                | 省部级一类，团体        |                            |
 | [蓝桥杯](https://dasai.lanqiao.cn/)                     | 国家级一类，个人        |                            |
 | [团体程序设计天梯赛](https://gplt.patest.cn/regulation) | 国家级一类，个人 & 团体 |                            |
 | [RoboCom 机器人开发者大赛](https://www.robocom.com.cn/) | 国家级一类，个人        |                            |
