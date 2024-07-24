@@ -4,7 +4,7 @@
 
 更新可能不及时。
 
-## 2023 年
+## 2024 年
 
 - [2024-06-26 我校多名ACM集训队员拿到名校的研究生入学OFFER](https://mp.weixin.qq.com/s/oJL-W1GSWh5y5gcbJ-z2nQ)
 - [2024-05-28 关于举办浙江农林大学2024年程序设计竞赛暨百度之星选拔赛的通知](https://mp.weixin.qq.com/s/Da_CFTGIiMVVitWO_Csc3Q)
@@ -14,6 +14,9 @@
 - [2024-04-16 强者来袭——考研篇（12）](https://mp.weixin.qq.com/s/c2kbHjULITc8gOgDleLRtA)
 - [2024-04-09 强者来袭——考研篇（11）](https://mp.weixin.qq.com/s/a0JVff5zi2PvyGcZca-C2Q)
 - [2024-03-12 第九届团体程序设计天梯赛](https://mp.weixin.qq.com/s/c3S7DX_CjQ7QKtvhL9YstQ)
+
+## 2023 年
+
 - [2023-12-20 我校学子在中国大学生程序设计竞赛中获得铜奖和银奖的佳绩](https://mp.weixin.qq.com/s/0pxycLY4v2yMVhCdQaZl_g)
 - [2023-12-17 关于举办浙江农林大学2023年ACM新生杯的通知](https://mp.weixin.qq.com/s/OdYATvzKet9Gfv80PL6z9g)
 - [2023-12-01 浙江农林大学ICPC校内选拔赛采访](https://mp.weixin.qq.com/s/rkYQ5Dz5k9vaG7tvgpjxSA)
