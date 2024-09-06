@@ -26,7 +26,7 @@ features:
     details: 承担队内管理职责的均为本科学长学姐，氛围相当自由。很多队员最终拿到了大厂 Offer，也有很多队员考研到浙大等名校。
   - icon: 🎉
     title: 欢迎加入我们
-    details: 我们随时欢迎感兴趣的同学加入我们！QQ：ACM 协会大群 628253675，2023 迎新群 692943231。
+    details: 我们随时欢迎感兴趣的同学加入我们！QQ：ACM 协会大群 628253675，2024 迎新群 684616577。
 ---
 
 <!-- From `https://github.com/vuejs/vitepress/blob/main/docs/index.md` -->
