@@ -6,6 +6,15 @@
 
 ## 2024 年
 
+- [2024-12-15 关于举办浙江省大学生程序设计竞赛  校内选拔赛暨浙江农林大学2024年“新生杯”程序设计竞赛的通知](https://mp.weixin.qq.com/s/A8LdbGFMbti5GW1ZqX5Unw)
+- [2024-11-30 我校学子在ICPC亚洲区域赛（沈阳）站中获得奖牌](https://mp.weixin.qq.com/s/mxO3HxwAltvmVhHd3F2Z4Q)
+- [2024-11-15 我校学子在ICPC亚洲区域赛（杭州）站中获得奖牌](https://mp.weixin.qq.com/s/acbQhrvRc8YpI-2LmkeIdw)
+- [2024-11-12 关于举办浙江农林大学2025年蓝桥杯校赛的通知](https://mp.weixin.qq.com/s/wm3lyOaaPd_DtXPdUQ1IkQ)
+- [2024-11-11 我校学子在CCPC中国大学生程序设计竞赛（女生专场）中获得奖牌](https://mp.weixin.qq.com/s/v6J3-usM8ZbRPyChq1ryLw)
+- [2024-11-10 我校学子获得ICPC国际大学生程序设计竞赛亚洲区域赛铜牌](https://mp.weixin.qq.com/s/QeJFqfUeNuDRxMztQTezqA)
+- [2024-11-08 我校学子在大学生程序设计竞赛（济南）中获得奖牌](https://mp.weixin.qq.com/s/FGWqjMmuIN_103Lg4wpSYg)
+- [2024-11-07 我校学子在大学生程序竞赛中获得奖牌](https://mp.weixin.qq.com/s/ot9aR2Enb6QJMoGcGhhcKA)
+- [2024-10-16 浙江农林大学2024 ICPC国际大学生程序设计竞赛校赛选拔赛举行通知](https://mp.weixin.qq.com/s/jDpdKbGHqssVXcp96XdJmA)
 - [2024-06-26 我校多名ACM集训队员拿到名校的研究生入学OFFER](https://mp.weixin.qq.com/s/oJL-W1GSWh5y5gcbJ-z2nQ)
 - [2024-05-28 关于举办浙江农林大学2024年程序设计竞赛暨百度之星选拔赛的通知](https://mp.weixin.qq.com/s/Da_CFTGIiMVVitWO_Csc3Q)
 - [2024-05-10 省赛佳绩：包揽金银铜奖项！](https://mp.weixin.qq.com/s/QcIL3hUb8E0ZuproY3cVKQ)

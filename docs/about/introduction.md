@@ -39,7 +39,7 @@ ACM 集训队主要训练并参加 ICPC、CCPC 和浙江省赛，其他比赛如
 | 浙江省赛                                                | 省部级一类，团体        |                            |
 | [蓝桥杯](https://dasai.lanqiao.cn/)                     | 国家级一类，个人        |                            |
 | [团体程序设计天梯赛](https://gplt.patest.cn/regulation) | 国家级一类，个人 & 团体 |                            |
-| [RoboCom 机器人开发者大赛](https://www.robocom.com.cn/) | 国家级一类，个人        |                            |
+| [RoboCom 机器人开发者大赛](https://www.robocom.com.cn/) | 国家级二类，个人        |                            |
 
 几乎所有比赛都是国家级，潜心学习一年，你会收获颇丰。平均每年都有两三个大一能拿个人国奖。[往年竞赛成绩](./history.md) 也十分出彩，近年屡获区域赛金奖。
 
