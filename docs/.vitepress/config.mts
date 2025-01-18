@@ -84,7 +84,7 @@ export default defineConfig({
 
     footer: {
       message: '<a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备17046339号-2</a>',
-      copyright: 'Copyright © 2020-2023 ZAFU ACM Team'
+      copyright: 'Copyright © 2025 ZAFU ACM Team'
     },
 
     search: { provider: 'local' },
