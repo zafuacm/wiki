@@ -1,6 +1,7 @@
 name: Deploy VitePress site to Pages
 on:
   push:
+  workflow_dispatch:
 
 jobs:
   build:
@@ -10,9 +11,9 @@ jobs:
       - name: Checkout main
         uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v4
         with:
-          version: 8
+          version: 10
 
       - name: Install dependencies
         run: pnpm install
