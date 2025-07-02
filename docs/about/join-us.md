@@ -24,6 +24,9 @@ comments: true
 
 使用教程：<https://www.bilibili.com/video/av987647326>。
 
+现在在 vjudge 上提交 atcoder 的题目发生了一些变化，需要先绑定 atcoder 账号
+vjudge 上提交 atcoder 题目的具体流程: <https://docs.qq.com/doc/DUm1pQ2RMQXJLVUJu>
+
 我们收集了一些可能有用的资料，见 [入门指南](../basic/index.md)。
 
 ::: warning 关于学术诚信
