@@ -3,7 +3,7 @@
     "katex": "^0.16.9",
     "markdown-it-footnote": "^3.0.3",
     "markdown-it-mathjax3": "^4.3.2",
-    "vitepress": "1.0.0-rc.29"
+    "vitepress": "1.6.4"
   },
   "scripts": {
     "dev": "vitepress dev docs",
