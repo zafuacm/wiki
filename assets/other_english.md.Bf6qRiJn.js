@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./chunks/framework.UtM2fnOC.js";const h=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"other/english.md","filePath":"other/english.md","lastUpdated":1756702633000}'),r={name:"other/english.md"};function s(o,n,c,i,d,l){return a(),t("div")}const _=e(r,[["render",s]]);export{h as __pageData,_ as default};
