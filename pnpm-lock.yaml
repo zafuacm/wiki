@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   katex:
-    specifier: ^0.16.9
-    version: 0.16.9
+    specifier: ^0.16.22
+    version: 0.16.22
   markdown-it-footnote:
     specifier: ^4.0.0
     version: 4.0.0
@@ -1217,8 +1217,8 @@ packages:
       - encoding
     dev: false
 
-  /katex@0.16.9:
-    resolution: {integrity: sha512-fsSYjWS0EEOwvy81j3vRA8TEAhQhKiqO+FQaKWp0m39qwOzHVBgAUBIXWj1pB+O2W3fIpNa6Y9KSKCVbfPhyAQ==}
+  /katex@0.16.22:
+    resolution: {integrity: sha512-XCHRdUw4lf3SKBaJe4EvgqIuWwkPSo9XoeO8GjQW94Bp7TWv9hNhzZjZ+OH9yf1UmLygb7DIT5GSFQiyt16zYg==}
     hasBin: true
     dependencies:
       commander: 8.3.0
