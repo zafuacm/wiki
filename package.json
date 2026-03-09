@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "katex": "^0.16.32",
+    "katex": "^0.16.38",
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "1.6.4"
