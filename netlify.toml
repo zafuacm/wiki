@@ -1,0 +1,8 @@
+[build]
+  command = "pnpm build"
+  publish = "docs/.vitepress/dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # 锁文件仍是 pnpm 8 的 v6 格式，避免新版 pnpm 在 frozen 模式下直接拒绝。
+  PNPM_FLAGS = "--no-frozen-lockfile"
